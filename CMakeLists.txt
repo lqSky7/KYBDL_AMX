@@ -97,6 +97,10 @@ target_include_directories(cycles PUBLIC ${CMAKE_SOURCE_DIR}/neon-ntt/common)
 
 add_subdirectory(neon-ntt)
 add_subdirectory(PQCrypto-LWEKE)
+add_subdirectory(kyber)
+add_subdirectory(mayo_uov)
+add_subdirectory(hqc)
+add_subdirectory(sntrup761)
 
 # Tests
 add_executable(test_rng test/test_rng.cpp)
@@ -133,3 +137,41 @@ add_executable(speed_aes speed/speed_aes.c aes/aes_armv8.c)
 target_include_directories(speed_aes PRIVATE PQCrypto-LWEKE/common/aes)
 target_compile_definitions(speed_aes PRIVATE NTESTS=1024)
 target_link_libraries(speed_aes PRIVATE cycles)
+
+# AMX Quantized Vector Search Engine
+add_library(amx_vector_search OBJECT amx/amx_vector_search.c)
+target_include_directories(amx_vector_search PUBLIC ${AMX_PATH})
+target_compile_options(amx_vector_search PRIVATE -O3)
+
+add_executable(test_amx_vector_search test/test_amx_vector_search.cpp amx/amx_vector_search.c)
+target_include_directories(test_amx_vector_search PRIVATE ${AMX_PATH} test)
+target_compile_options(test_amx_vector_search PRIVATE -O3)
+target_link_libraries(test_amx_vector_search PRIVATE GTest::gtest_main)
+gtest_discover_tests(test_amx_vector_search DISCOVERY_TIMEOUT ${GTEST_DISCOVERY_TIMEOUT})
+
+add_executable(speed_vector_search speed/speed_vector_search.c amx/amx_vector_search.c)
+target_include_directories(speed_vector_search PRIVATE ${AMX_PATH} speed)
+target_compile_options(speed_vector_search PRIVATE -O3 -ffast-math)
+
+# AMX Quantized 2D Image Convolution Engine
+add_library(amx_conv2d OBJECT amx_conv2d/amx_conv2d.c)
+target_include_directories(amx_conv2d PUBLIC ${AMX_PATH} amx_conv2d)
+target_compile_options(amx_conv2d PRIVATE -O3)
+
+add_executable(test_amx_conv2d test/test_amx_conv2d.cpp amx_conv2d/amx_conv2d.c)
+target_include_directories(test_amx_conv2d PRIVATE ${AMX_PATH} amx_conv2d test)
+target_compile_options(test_amx_conv2d PRIVATE -O3)
+target_link_libraries(test_amx_conv2d PRIVATE GTest::gtest_main)
+gtest_discover_tests(test_amx_conv2d DISCOVERY_TIMEOUT ${GTEST_DISCOVERY_TIMEOUT})
+
+add_executable(speed_conv2d speed/speed_conv2d.c amx_conv2d/amx_conv2d.c)
+target_include_directories(speed_conv2d PRIVATE ${AMX_PATH} amx_conv2d speed)
+target_compile_options(speed_conv2d PRIVATE -O3 -ffast-math)
+
+add_executable(speed_conv2d_stats speed/speed_conv2d_stats.c amx_conv2d/amx_conv2d.c)
+target_include_directories(speed_conv2d_stats PRIVATE ${AMX_PATH} amx_conv2d speed)
+target_compile_options(speed_conv2d_stats PRIVATE -O3 -ffast-math)
+
+
+
+
