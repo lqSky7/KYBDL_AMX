@@ -1,0 +1,17 @@
+Primitive,Parameter_Set,Operation,NEON_Baseline_Cycles,AMX_Implementation_Cycles,Speedup_Ratio_NEON_over_AMX,Percent_Overhead_AMX,Faster_Architecture
+ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18858,518682,0.0364,2650.46,NEON Baseline
+ML-KEM (Kyber),KYBER1024,crypto_kem_dec,45335,764654,0.0593,1586.67,NEON Baseline
+ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31748,593759,0.0535,1770.22,NEON Baseline
+ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29791,491820,0.0606,1550.9,NEON Baseline
+ML-KEM (Kyber),KYBER512,MatrixVectorMul,5367,136599,0.0393,2445.16,NEON Baseline
+ML-KEM (Kyber),KYBER512,crypto_kem_dec,20062,255166,0.0786,1171.89,NEON Baseline
+ML-KEM (Kyber),KYBER512,crypto_kem_enc,14064,199809,0.0704,1320.71,NEON Baseline
+ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13433,143331,0.0937,967.01,NEON Baseline
+ML-KEM (Kyber),KYBER768,MatrixVectorMul,12105,295488,0.041,2341.04,NEON Baseline
+ML-KEM (Kyber),KYBER768,crypto_kem_dec,30923,456450,0.0677,1376.09,NEON Baseline
+ML-KEM (Kyber),KYBER768,crypto_kem_enc,21956,379768,0.0578,1629.68,NEON Baseline
+ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20802,303993,0.0684,1361.36,NEON Baseline
+MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,129.67,87.94,1.4745,-32.18,AMX Coprocessor
+MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,181.42,118.58,1.5299,-34.64,AMX Coprocessor
+MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,435.1,272.23,1.5983,-37.43,AMX Coprocessor
+MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1054.8,624.14,1.69,-40.83,AMX Coprocessor

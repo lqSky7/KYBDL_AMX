@@ -1,0 +1,481 @@
+Trial_ID,Primitive,Parameter_Set,Operation,NEON_Baseline,AMX_Implementation,Speedup_Ratio,Winner
+1,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,19053.94,523687.14,0.0364,NEON Baseline
+2,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18410.5,517765.99,0.0356,NEON Baseline
+3,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18986.56,521341.72,0.0364,NEON Baseline
+4,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18625.63,513974.86,0.0362,NEON Baseline
+5,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18917.35,511012.01,0.037,NEON Baseline
+6,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18810.81,508120.05,0.037,NEON Baseline
+7,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18859.94,510410.1,0.037,NEON Baseline
+8,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18877.74,527255.31,0.0358,NEON Baseline
+9,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,19177.99,526031.88,0.0365,NEON Baseline
+10,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18463.06,522237.59,0.0354,NEON Baseline
+11,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18722.79,510061.85,0.0367,NEON Baseline
+12,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18900.6,523272.57,0.0361,NEON Baseline
+13,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,19374.78,516878.4,0.0375,NEON Baseline
+14,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,19164.87,495300.63,0.0387,NEON Baseline
+15,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18768.16,518470.52,0.0362,NEON Baseline
+16,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18702.57,525381.71,0.0356,NEON Baseline
+17,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18792.54,525325.46,0.0358,NEON Baseline
+18,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,19109.98,511878.67,0.0373,NEON Baseline
+19,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18813.22,518030.69,0.0363,NEON Baseline
+20,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18805.63,512943.18,0.0367,NEON Baseline
+21,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18656.45,521629.8,0.0358,NEON Baseline
+22,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18629.78,514931.5,0.0362,NEON Baseline
+23,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,19058.07,523623.18,0.0364,NEON Baseline
+24,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18858.28,510254.25,0.037,NEON Baseline
+25,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18354.21,519463.72,0.0353,NEON Baseline
+26,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18845.18,525168.69,0.0359,NEON Baseline
+27,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,19089.22,515503.49,0.037,NEON Baseline
+28,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18807.02,518522.85,0.0363,NEON Baseline
+29,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,18876.96,521911.43,0.0362,NEON Baseline
+30,ML-KEM (Kyber),KYBER1024,MatrixVectorMul,19194.89,521621.28,0.0368,NEON Baseline
+1,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,45526.76,761867.73,0.0598,NEON Baseline
+2,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,44894.24,757466.95,0.0593,NEON Baseline
+3,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,44945.2,765396.04,0.0587,NEON Baseline
+4,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,45910.76,756191.82,0.0607,NEON Baseline
+5,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,44744.95,767423.98,0.0583,NEON Baseline
+6,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,46786.32,753034.29,0.0621,NEON Baseline
+7,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,44666.54,761329.78,0.0587,NEON Baseline
+8,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,45109.64,757765.04,0.0595,NEON Baseline
+9,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,45532.72,754346.71,0.0604,NEON Baseline
+10,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,44214.71,767174.73,0.0576,NEON Baseline
+11,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,44920.29,767782.32,0.0585,NEON Baseline
+12,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,45318.16,767018.11,0.0591,NEON Baseline
+13,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,44925.04,754390.48,0.0596,NEON Baseline
+14,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,44695.83,767550.36,0.0582,NEON Baseline
+15,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,44110.35,766016.44,0.0576,NEON Baseline
+16,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,45295.18,775212.33,0.0584,NEON Baseline
+17,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,44319.87,763439.89,0.0581,NEON Baseline
+18,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,45582.55,753700.08,0.0605,NEON Baseline
+19,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,46192.15,755126.9,0.0612,NEON Baseline
+20,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,44841.61,783348.34,0.0572,NEON Baseline
+21,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,46012.94,772784.56,0.0595,NEON Baseline
+22,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,45478.14,753879.9,0.0603,NEON Baseline
+23,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,43985.97,771588.18,0.057,NEON Baseline
+24,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,46358.82,761051.57,0.0609,NEON Baseline
+25,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,45138.37,765091.07,0.059,NEON Baseline
+26,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,45269.0,775375.49,0.0584,NEON Baseline
+27,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,46076.23,773342.78,0.0596,NEON Baseline
+28,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,44830.59,769955.38,0.0582,NEON Baseline
+29,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,45346.21,764670.72,0.0593,NEON Baseline
+30,ML-KEM (Kyber),KYBER1024,crypto_kem_dec,44231.51,754324.14,0.0586,NEON Baseline
+1,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,32334.84,600071.01,0.0539,NEON Baseline
+2,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31755.21,603684.34,0.0526,NEON Baseline
+3,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31759.11,575927.68,0.0551,NEON Baseline
+4,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31482.75,584936.48,0.0538,NEON Baseline
+5,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31934.12,598864.54,0.0533,NEON Baseline
+6,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31182.19,587673.23,0.0531,NEON Baseline
+7,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,32169.64,591193.31,0.0544,NEON Baseline
+8,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31710.17,589989.56,0.0537,NEON Baseline
+9,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31833.88,603109.83,0.0528,NEON Baseline
+10,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,32499.83,589986.09,0.0551,NEON Baseline
+11,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31588.05,593670.23,0.0532,NEON Baseline
+12,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31311.73,579231.57,0.0541,NEON Baseline
+13,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31924.43,578285.65,0.0552,NEON Baseline
+14,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31612.67,600652.36,0.0526,NEON Baseline
+15,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31912.51,585692.79,0.0545,NEON Baseline
+16,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31769.13,594894.33,0.0534,NEON Baseline
+17,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,32374.11,602976.36,0.0537,NEON Baseline
+18,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,32081.57,595845.81,0.0538,NEON Baseline
+19,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31353.14,603479.22,0.052,NEON Baseline
+20,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,32197.34,595132.83,0.0541,NEON Baseline
+21,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31595.86,599111.81,0.0527,NEON Baseline
+22,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31658.88,596977.73,0.053,NEON Baseline
+23,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,32218.61,590824.62,0.0545,NEON Baseline
+24,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31822.53,589882.87,0.0539,NEON Baseline
+25,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31344.86,592825.1,0.0529,NEON Baseline
+26,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31482.17,601997.12,0.0523,NEON Baseline
+27,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31685.2,591322.79,0.0536,NEON Baseline
+28,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31545.49,596541.47,0.0529,NEON Baseline
+29,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31850.09,592731.98,0.0537,NEON Baseline
+30,ML-KEM (Kyber),KYBER1024,crypto_kem_enc,31048.51,589979.15,0.0526,NEON Baseline
+1,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29218.92,494769.68,0.0591,NEON Baseline
+2,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,30003.17,500433.53,0.06,NEON Baseline
+3,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29926.27,489664.57,0.0611,NEON Baseline
+4,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29174.87,489883.83,0.0596,NEON Baseline
+5,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,28900.57,490257.58,0.0589,NEON Baseline
+6,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,30159.06,501446.76,0.0601,NEON Baseline
+7,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29501.1,495780.78,0.0595,NEON Baseline
+8,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29666.87,493047.86,0.0602,NEON Baseline
+9,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29679.97,496920.65,0.0597,NEON Baseline
+10,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29755.61,498720.18,0.0597,NEON Baseline
+11,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29861.02,485811.56,0.0615,NEON Baseline
+12,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29480.09,492876.23,0.0598,NEON Baseline
+13,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29611.3,492155.96,0.0602,NEON Baseline
+14,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29975.19,481733.56,0.0622,NEON Baseline
+15,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,30071.13,481341.91,0.0625,NEON Baseline
+16,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29894.68,506348.58,0.059,NEON Baseline
+17,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,30163.33,485946.67,0.0621,NEON Baseline
+18,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29267.36,497459.56,0.0588,NEON Baseline
+19,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,30102.69,484689.87,0.0621,NEON Baseline
+20,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,30114.13,490493.04,0.0614,NEON Baseline
+21,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,30044.98,498138.93,0.0603,NEON Baseline
+22,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29391.62,488598.54,0.0602,NEON Baseline
+23,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,30228.76,497775.26,0.0607,NEON Baseline
+24,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29355.97,489193.53,0.06,NEON Baseline
+25,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29857.2,496629.09,0.0601,NEON Baseline
+26,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29739.32,499289.42,0.0596,NEON Baseline
+27,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,30015.79,494568.48,0.0607,NEON Baseline
+28,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,30001.38,490807.99,0.0611,NEON Baseline
+29,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29549.87,482692.33,0.0612,NEON Baseline
+30,ML-KEM (Kyber),KYBER1024,crypto_kem_keypair,29751.43,488096.24,0.061,NEON Baseline
+1,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5314.62,135177.89,0.0393,NEON Baseline
+2,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5346.44,139679.14,0.0383,NEON Baseline
+3,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5352.73,137976.69,0.0388,NEON Baseline
+4,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5365.42,137188.38,0.0391,NEON Baseline
+5,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5250.04,138445.32,0.0379,NEON Baseline
+6,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5378.16,134926.83,0.0399,NEON Baseline
+7,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5395.87,136670.46,0.0395,NEON Baseline
+8,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5399.66,136719.84,0.0395,NEON Baseline
+9,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5333.87,134622.6,0.0396,NEON Baseline
+10,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5422.06,136004.18,0.0399,NEON Baseline
+11,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5383.37,134396.99,0.0401,NEON Baseline
+12,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5316.84,134727.71,0.0395,NEON Baseline
+13,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5416.98,135948.29,0.0398,NEON Baseline
+14,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5382.38,138383.58,0.0389,NEON Baseline
+15,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5498.07,136158.64,0.0404,NEON Baseline
+16,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5317.24,133597.01,0.0398,NEON Baseline
+17,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5305.96,133220.27,0.0398,NEON Baseline
+18,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5247.29,139150.35,0.0377,NEON Baseline
+19,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5301.95,138697.38,0.0382,NEON Baseline
+20,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5354.0,136737.86,0.0392,NEON Baseline
+21,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5349.06,135322.86,0.0395,NEON Baseline
+22,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5478.58,135837.15,0.0403,NEON Baseline
+23,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5446.14,138546.32,0.0393,NEON Baseline
+24,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5308.66,139813.07,0.038,NEON Baseline
+25,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5310.08,136206.03,0.039,NEON Baseline
+26,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5271.44,135620.7,0.0389,NEON Baseline
+27,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5435.0,138078.91,0.0394,NEON Baseline
+28,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5391.58,137173.86,0.0393,NEON Baseline
+29,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5310.41,138479.13,0.0383,NEON Baseline
+30,ML-KEM (Kyber),KYBER512,MatrixVectorMul,5358.31,136270.16,0.0393,NEON Baseline
+1,ML-KEM (Kyber),KYBER512,crypto_kem_dec,19862.83,253811.91,0.0783,NEON Baseline
+2,ML-KEM (Kyber),KYBER512,crypto_kem_dec,19929.1,256673.21,0.0776,NEON Baseline
+3,ML-KEM (Kyber),KYBER512,crypto_kem_dec,19912.95,256192.97,0.0777,NEON Baseline
+4,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20274.74,257878.86,0.0786,NEON Baseline
+5,ML-KEM (Kyber),KYBER512,crypto_kem_dec,19765.35,249089.58,0.0794,NEON Baseline
+6,ML-KEM (Kyber),KYBER512,crypto_kem_dec,19964.12,252349.81,0.0791,NEON Baseline
+7,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20057.75,256896.18,0.0781,NEON Baseline
+8,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20253.74,255526.58,0.0793,NEON Baseline
+9,ML-KEM (Kyber),KYBER512,crypto_kem_dec,19875.24,255483.63,0.0778,NEON Baseline
+10,ML-KEM (Kyber),KYBER512,crypto_kem_dec,19833.13,261922.64,0.0757,NEON Baseline
+11,ML-KEM (Kyber),KYBER512,crypto_kem_dec,19678.91,251914.73,0.0781,NEON Baseline
+12,ML-KEM (Kyber),KYBER512,crypto_kem_dec,19732.21,253715.69,0.0778,NEON Baseline
+13,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20342.72,254280.43,0.08,NEON Baseline
+14,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20029.45,259481.71,0.0772,NEON Baseline
+15,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20067.99,252490.72,0.0795,NEON Baseline
+16,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20042.05,254777.71,0.0787,NEON Baseline
+17,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20330.94,254692.95,0.0798,NEON Baseline
+18,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20418.65,254306.39,0.0803,NEON Baseline
+19,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20418.9,249824.47,0.0817,NEON Baseline
+20,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20263.85,253445.82,0.08,NEON Baseline
+21,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20646.65,254044.27,0.0813,NEON Baseline
+22,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20111.62,260886.53,0.0771,NEON Baseline
+23,ML-KEM (Kyber),KYBER512,crypto_kem_dec,19972.46,256871.92,0.0778,NEON Baseline
+24,ML-KEM (Kyber),KYBER512,crypto_kem_dec,19845.01,258540.32,0.0768,NEON Baseline
+25,ML-KEM (Kyber),KYBER512,crypto_kem_dec,19801.81,254118.35,0.0779,NEON Baseline
+26,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20138.27,251247.86,0.0802,NEON Baseline
+27,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20190.77,259148.58,0.0779,NEON Baseline
+28,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20351.79,260501.1,0.0781,NEON Baseline
+29,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20482.16,253446.07,0.0808,NEON Baseline
+30,ML-KEM (Kyber),KYBER512,crypto_kem_dec,20252.91,251063.8,0.0807,NEON Baseline
+1,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14131.76,196523.86,0.0719,NEON Baseline
+2,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14204.72,200977.97,0.0707,NEON Baseline
+3,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14053.05,198511.8,0.0708,NEON Baseline
+4,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14023.24,191028.19,0.0734,NEON Baseline
+5,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14181.3,200002.02,0.0709,NEON Baseline
+6,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14193.63,197230.55,0.072,NEON Baseline
+7,ML-KEM (Kyber),KYBER512,crypto_kem_enc,13685.97,197172.49,0.0694,NEON Baseline
+8,ML-KEM (Kyber),KYBER512,crypto_kem_enc,13746.82,204009.7,0.0674,NEON Baseline
+9,ML-KEM (Kyber),KYBER512,crypto_kem_enc,13822.74,199450.29,0.0693,NEON Baseline
+10,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14173.9,202203.81,0.0701,NEON Baseline
+11,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14299.46,201802.61,0.0709,NEON Baseline
+12,ML-KEM (Kyber),KYBER512,crypto_kem_enc,13998.11,201423.98,0.0695,NEON Baseline
+13,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14282.53,200639.26,0.0712,NEON Baseline
+14,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14087.28,198421.34,0.071,NEON Baseline
+15,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14007.88,202693.8,0.0691,NEON Baseline
+16,ML-KEM (Kyber),KYBER512,crypto_kem_enc,13781.36,204839.05,0.0673,NEON Baseline
+17,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14169.13,203492.99,0.0696,NEON Baseline
+18,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14293.92,200003.16,0.0715,NEON Baseline
+19,ML-KEM (Kyber),KYBER512,crypto_kem_enc,13888.5,200123.79,0.0694,NEON Baseline
+20,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14202.46,195028.52,0.0728,NEON Baseline
+21,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14631.25,198740.61,0.0736,NEON Baseline
+22,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14160.98,202348.65,0.07,NEON Baseline
+23,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14153.89,202506.25,0.0699,NEON Baseline
+24,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14245.49,204103.3,0.0698,NEON Baseline
+25,ML-KEM (Kyber),KYBER512,crypto_kem_enc,13716.41,199342.44,0.0688,NEON Baseline
+26,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14057.38,199690.27,0.0704,NEON Baseline
+27,ML-KEM (Kyber),KYBER512,crypto_kem_enc,13950.0,201437.7,0.0693,NEON Baseline
+28,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14084.59,201165.59,0.07,NEON Baseline
+29,ML-KEM (Kyber),KYBER512,crypto_kem_enc,13996.37,199013.92,0.0703,NEON Baseline
+30,ML-KEM (Kyber),KYBER512,crypto_kem_enc,14257.44,199549.79,0.0714,NEON Baseline
+1,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13615.39,141359.72,0.0963,NEON Baseline
+2,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13269.06,144948.99,0.0915,NEON Baseline
+3,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13343.55,142059.06,0.0939,NEON Baseline
+4,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13501.97,142860.75,0.0945,NEON Baseline
+5,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13132.37,142947.32,0.0919,NEON Baseline
+6,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13360.86,141596.37,0.0944,NEON Baseline
+7,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13375.47,142966.34,0.0936,NEON Baseline
+8,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13445.55,142605.59,0.0943,NEON Baseline
+9,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13293.66,143379.47,0.0927,NEON Baseline
+10,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13435.39,142099.96,0.0945,NEON Baseline
+11,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13346.05,145151.73,0.0919,NEON Baseline
+12,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13260.4,146597.18,0.0905,NEON Baseline
+13,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13380.97,139982.94,0.0956,NEON Baseline
+14,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13350.54,143944.67,0.0927,NEON Baseline
+15,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13472.43,142193.32,0.0947,NEON Baseline
+16,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13377.33,141853.59,0.0943,NEON Baseline
+17,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13471.32,141612.97,0.0951,NEON Baseline
+18,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13484.89,141738.09,0.0951,NEON Baseline
+19,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13583.22,145669.86,0.0932,NEON Baseline
+20,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13386.47,142581.96,0.0939,NEON Baseline
+21,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13399.14,146579.58,0.0914,NEON Baseline
+22,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13301.28,146316.14,0.0909,NEON Baseline
+23,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13348.1,143660.69,0.0929,NEON Baseline
+24,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13350.7,142431.91,0.0937,NEON Baseline
+25,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13636.79,142947.97,0.0954,NEON Baseline
+26,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13529.06,144333.45,0.0937,NEON Baseline
+27,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13275.37,143784.72,0.0923,NEON Baseline
+28,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13686.55,143702.53,0.0952,NEON Baseline
+29,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13365.95,141945.96,0.0942,NEON Baseline
+30,ML-KEM (Kyber),KYBER512,crypto_kem_keypair,13275.91,139816.42,0.095,NEON Baseline
+1,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12341.41,291751.15,0.0423,NEON Baseline
+2,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12311.16,293947.68,0.0419,NEON Baseline
+3,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12009.49,294788.21,0.0407,NEON Baseline
+4,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12027.1,298031.89,0.0404,NEON Baseline
+5,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12311.38,292836.37,0.042,NEON Baseline
+6,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12290.45,295787.53,0.0416,NEON Baseline
+7,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12103.21,298684.82,0.0405,NEON Baseline
+8,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12012.39,292597.44,0.0411,NEON Baseline
+9,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12134.11,291520.19,0.0416,NEON Baseline
+10,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12206.37,293419.58,0.0416,NEON Baseline
+11,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12204.54,296071.25,0.0412,NEON Baseline
+12,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12310.92,300258.5,0.041,NEON Baseline
+13,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12101.78,296155.21,0.0409,NEON Baseline
+14,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12145.69,299279.47,0.0406,NEON Baseline
+15,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12070.52,300418.0,0.0402,NEON Baseline
+16,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12301.15,298080.8,0.0413,NEON Baseline
+17,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12083.67,295357.9,0.0409,NEON Baseline
+18,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12212.25,297281.42,0.0411,NEON Baseline
+19,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12135.97,299371.95,0.0405,NEON Baseline
+20,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12035.13,294146.34,0.0409,NEON Baseline
+21,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12036.36,299763.14,0.0402,NEON Baseline
+22,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12052.83,290280.28,0.0415,NEON Baseline
+23,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12040.28,294872.11,0.0408,NEON Baseline
+24,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12085.19,299154.57,0.0404,NEON Baseline
+25,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12198.57,300789.61,0.0406,NEON Baseline
+26,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12537.55,294723.8,0.0425,NEON Baseline
+27,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12284.97,292717.92,0.042,NEON Baseline
+28,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12032.19,298240.03,0.0403,NEON Baseline
+29,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12017.56,293797.49,0.0409,NEON Baseline
+30,ML-KEM (Kyber),KYBER768,MatrixVectorMul,12311.21,290951.39,0.0423,NEON Baseline
+1,ML-KEM (Kyber),KYBER768,crypto_kem_dec,31342.22,457903.39,0.0684,NEON Baseline
+2,ML-KEM (Kyber),KYBER768,crypto_kem_dec,31591.85,457809.2,0.069,NEON Baseline
+3,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30907.94,465633.5,0.0664,NEON Baseline
+4,ML-KEM (Kyber),KYBER768,crypto_kem_dec,31016.93,460604.62,0.0673,NEON Baseline
+5,ML-KEM (Kyber),KYBER768,crypto_kem_dec,31128.4,451818.39,0.0689,NEON Baseline
+6,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30947.51,458242.19,0.0675,NEON Baseline
+7,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30808.15,457513.08,0.0673,NEON Baseline
+8,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30827.67,448515.43,0.0687,NEON Baseline
+9,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30661.19,447954.24,0.0684,NEON Baseline
+10,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30794.92,462447.0,0.0666,NEON Baseline
+11,ML-KEM (Kyber),KYBER768,crypto_kem_dec,31295.96,459978.67,0.068,NEON Baseline
+12,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30597.2,455767.33,0.0671,NEON Baseline
+13,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30783.05,460991.98,0.0668,NEON Baseline
+14,ML-KEM (Kyber),KYBER768,crypto_kem_dec,31389.47,471363.76,0.0666,NEON Baseline
+15,ML-KEM (Kyber),KYBER768,crypto_kem_dec,31073.27,453885.71,0.0685,NEON Baseline
+16,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30880.62,469731.77,0.0657,NEON Baseline
+17,ML-KEM (Kyber),KYBER768,crypto_kem_dec,31234.15,451652.58,0.0692,NEON Baseline
+18,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30792.59,458194.29,0.0672,NEON Baseline
+19,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30723.47,454033.57,0.0677,NEON Baseline
+20,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30674.99,457297.09,0.0671,NEON Baseline
+21,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30469.78,456112.0,0.0668,NEON Baseline
+22,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30268.15,455617.02,0.0664,NEON Baseline
+23,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30825.16,467500.75,0.0659,NEON Baseline
+24,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30449.46,456952.26,0.0666,NEON Baseline
+25,ML-KEM (Kyber),KYBER768,crypto_kem_dec,31100.56,452353.37,0.0688,NEON Baseline
+26,ML-KEM (Kyber),KYBER768,crypto_kem_dec,31293.12,456353.59,0.0686,NEON Baseline
+27,ML-KEM (Kyber),KYBER768,crypto_kem_dec,30577.01,451933.99,0.0677,NEON Baseline
+28,ML-KEM (Kyber),KYBER768,crypto_kem_dec,31194.36,462110.78,0.0675,NEON Baseline
+29,ML-KEM (Kyber),KYBER768,crypto_kem_dec,31517.57,455327.29,0.0692,NEON Baseline
+30,ML-KEM (Kyber),KYBER768,crypto_kem_dec,31386.37,463849.81,0.0677,NEON Baseline
+1,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21904.39,378418.61,0.0579,NEON Baseline
+2,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21921.07,378721.9,0.0579,NEON Baseline
+3,ML-KEM (Kyber),KYBER768,crypto_kem_enc,22110.01,369258.88,0.0599,NEON Baseline
+4,ML-KEM (Kyber),KYBER768,crypto_kem_enc,22045.72,383012.2,0.0576,NEON Baseline
+5,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21716.44,378695.24,0.0573,NEON Baseline
+6,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21792.74,380544.45,0.0573,NEON Baseline
+7,ML-KEM (Kyber),KYBER768,crypto_kem_enc,22115.35,380733.82,0.0581,NEON Baseline
+8,ML-KEM (Kyber),KYBER768,crypto_kem_enc,22170.2,385139.3,0.0576,NEON Baseline
+9,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21625.55,380136.9,0.0569,NEON Baseline
+10,ML-KEM (Kyber),KYBER768,crypto_kem_enc,22139.09,380351.72,0.0582,NEON Baseline
+11,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21739.34,384064.4,0.0566,NEON Baseline
+12,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21529.23,381386.88,0.0564,NEON Baseline
+13,ML-KEM (Kyber),KYBER768,crypto_kem_enc,22087.16,383106.94,0.0577,NEON Baseline
+14,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21939.44,378493.12,0.058,NEON Baseline
+15,ML-KEM (Kyber),KYBER768,crypto_kem_enc,22073.37,379864.56,0.0581,NEON Baseline
+16,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21603.16,376106.18,0.0574,NEON Baseline
+17,ML-KEM (Kyber),KYBER768,crypto_kem_enc,22034.88,376529.19,0.0585,NEON Baseline
+18,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21962.69,377044.5,0.0582,NEON Baseline
+19,ML-KEM (Kyber),KYBER768,crypto_kem_enc,22130.83,387595.65,0.0571,NEON Baseline
+20,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21707.62,382030.92,0.0568,NEON Baseline
+21,ML-KEM (Kyber),KYBER768,crypto_kem_enc,22036.39,377351.52,0.0584,NEON Baseline
+22,ML-KEM (Kyber),KYBER768,crypto_kem_enc,22065.59,391569.75,0.0564,NEON Baseline
+23,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21991.93,382372.28,0.0575,NEON Baseline
+24,ML-KEM (Kyber),KYBER768,crypto_kem_enc,22231.5,379524.17,0.0586,NEON Baseline
+25,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21496.42,383933.69,0.056,NEON Baseline
+26,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21762.94,368262.33,0.0591,NEON Baseline
+27,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21760.79,376201.8,0.0578,NEON Baseline
+28,ML-KEM (Kyber),KYBER768,crypto_kem_enc,22296.81,377767.47,0.059,NEON Baseline
+29,ML-KEM (Kyber),KYBER768,crypto_kem_enc,22426.88,385064.29,0.0582,NEON Baseline
+30,ML-KEM (Kyber),KYBER768,crypto_kem_enc,21947.01,377511.83,0.0581,NEON Baseline
+1,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,21149.91,306739.12,0.069,NEON Baseline
+2,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20696.64,302506.86,0.0684,NEON Baseline
+3,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20969.97,308602.49,0.068,NEON Baseline
+4,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,21027.94,312226.23,0.0673,NEON Baseline
+5,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20863.78,303896.41,0.0687,NEON Baseline
+6,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,21156.84,303037.32,0.0698,NEON Baseline
+7,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,21179.4,300668.85,0.0704,NEON Baseline
+8,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20747.0,307376.78,0.0675,NEON Baseline
+9,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,21104.34,304257.64,0.0694,NEON Baseline
+10,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,21164.19,299428.32,0.0707,NEON Baseline
+11,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20666.36,304140.59,0.068,NEON Baseline
+12,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20887.97,299492.98,0.0697,NEON Baseline
+13,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,21072.47,303230.55,0.0695,NEON Baseline
+14,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20542.14,300909.67,0.0683,NEON Baseline
+15,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,21139.06,301702.64,0.0701,NEON Baseline
+16,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20713.73,306476.07,0.0676,NEON Baseline
+17,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20687.05,300301.62,0.0689,NEON Baseline
+18,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20537.34,309612.18,0.0663,NEON Baseline
+19,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20499.02,303280.39,0.0676,NEON Baseline
+20,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20965.59,305691.44,0.0686,NEON Baseline
+21,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,21126.35,305122.47,0.0692,NEON Baseline
+22,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,21312.53,307518.06,0.0693,NEON Baseline
+23,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20575.26,302574.46,0.068,NEON Baseline
+24,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20602.62,300213.8,0.0686,NEON Baseline
+25,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20527.45,305105.13,0.0673,NEON Baseline
+26,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,21330.5,305065.79,0.0699,NEON Baseline
+27,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20880.19,305278.01,0.0684,NEON Baseline
+28,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,21060.79,306455.45,0.0687,NEON Baseline
+29,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20781.26,313736.98,0.0662,NEON Baseline
+30,ML-KEM (Kyber),KYBER768,crypto_kem_keypair,20801.36,302591.72,0.0687,NEON Baseline
+1,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,129.04,87.62,1.4727,AMX Coprocessor
+2,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,132.96,87.42,1.5209,AMX Coprocessor
+3,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,129.4,87.06,1.4863,AMX Coprocessor
+4,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,128.32,88.11,1.4564,AMX Coprocessor
+5,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,131.57,86.96,1.513,AMX Coprocessor
+6,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,128.16,88.68,1.4452,AMX Coprocessor
+7,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,130.61,87.04,1.5006,AMX Coprocessor
+8,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,127.58,88.04,1.4491,AMX Coprocessor
+9,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,127.2,88.62,1.4353,AMX Coprocessor
+10,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,127.9,87.2,1.4667,AMX Coprocessor
+11,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,129.39,87.96,1.471,AMX Coprocessor
+12,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,131.11,87.59,1.4969,AMX Coprocessor
+13,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,131.37,88.19,1.4896,AMX Coprocessor
+14,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,130.41,88.54,1.4729,AMX Coprocessor
+15,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,128.45,87.83,1.4625,AMX Coprocessor
+16,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,127.36,88.66,1.4365,AMX Coprocessor
+17,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,131.75,88.18,1.4941,AMX Coprocessor
+18,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,125.85,87.61,1.4365,AMX Coprocessor
+19,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,130.74,88.64,1.475,AMX Coprocessor
+20,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,129.8,88.35,1.4692,AMX Coprocessor
+21,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,130.43,88.88,1.4675,AMX Coprocessor
+22,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,130.23,88.26,1.4755,AMX Coprocessor
+23,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,131.24,87.87,1.4936,AMX Coprocessor
+24,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,130.7,87.97,1.4857,AMX Coprocessor
+25,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,129.45,89.83,1.4411,AMX Coprocessor
+26,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,126.28,87.58,1.4419,AMX Coprocessor
+27,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,130.48,88.26,1.4784,AMX Coprocessor
+28,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,130.6,87.55,1.4917,AMX Coprocessor
+29,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,131.21,86.35,1.5195,AMX Coprocessor
+30,MAYO (Multivariate),"MAYO-1 (m=64, n=66)",QuadFormEval,126.59,87.08,1.4537,AMX Coprocessor
+1,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,180.86,118.46,1.5268,AMX Coprocessor
+2,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,187.27,117.6,1.5924,AMX Coprocessor
+3,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,179.98,116.02,1.5513,AMX Coprocessor
+4,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,176.37,118.26,1.4914,AMX Coprocessor
+5,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,185.94,117.76,1.579,AMX Coprocessor
+6,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,184.51,118.16,1.5615,AMX Coprocessor
+7,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,182.08,118.5,1.5365,AMX Coprocessor
+8,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,184.08,119.7,1.5378,AMX Coprocessor
+9,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,181.37,118.75,1.5273,AMX Coprocessor
+10,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,180.94,118.29,1.5296,AMX Coprocessor
+11,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,182.17,118.33,1.5395,AMX Coprocessor
+12,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,180.59,116.88,1.5451,AMX Coprocessor
+13,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,178.91,118.08,1.5152,AMX Coprocessor
+14,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,178.96,118.16,1.5146,AMX Coprocessor
+15,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,183.34,119.02,1.5404,AMX Coprocessor
+16,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,179.05,118.22,1.5145,AMX Coprocessor
+17,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,181.44,118.83,1.5269,AMX Coprocessor
+18,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,180.71,118.98,1.5188,AMX Coprocessor
+19,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,180.8,117.79,1.5349,AMX Coprocessor
+20,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,181.65,120.4,1.5087,AMX Coprocessor
+21,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,179.45,118.54,1.5138,AMX Coprocessor
+22,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,180.85,120.6,1.4996,AMX Coprocessor
+23,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,181.89,119.13,1.5268,AMX Coprocessor
+24,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,179.4,120.54,1.4883,AMX Coprocessor
+25,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,184.95,121.05,1.5279,AMX Coprocessor
+26,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,183.88,116.7,1.5757,AMX Coprocessor
+27,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,182.51,117.13,1.5582,AMX Coprocessor
+28,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,180.27,116.55,1.5467,AMX Coprocessor
+29,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,180.3,120.07,1.5016,AMX Coprocessor
+30,MAYO (Multivariate),"MAYO-2 (m=64, n=78)",QuadFormEval,181.51,118.63,1.5301,AMX Coprocessor
+1,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,425.24,278.06,1.5293,AMX Coprocessor
+2,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,429.66,272.27,1.5781,AMX Coprocessor
+3,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,429.39,270.64,1.5866,AMX Coprocessor
+4,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,429.79,276.46,1.5546,AMX Coprocessor
+5,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,428.74,269.66,1.5899,AMX Coprocessor
+6,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,435.48,275.4,1.5813,AMX Coprocessor
+7,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,435.25,275.01,1.5827,AMX Coprocessor
+8,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,431.54,267.83,1.6112,AMX Coprocessor
+9,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,431.01,271.1,1.5899,AMX Coprocessor
+10,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,421.38,270.52,1.5577,AMX Coprocessor
+11,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,430.42,276.69,1.5556,AMX Coprocessor
+12,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,433.56,267.98,1.6179,AMX Coprocessor
+13,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,435.37,275.92,1.5779,AMX Coprocessor
+14,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,441.77,270.63,1.6324,AMX Coprocessor
+15,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,427.41,272.15,1.5705,AMX Coprocessor
+16,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,437.16,273.34,1.5993,AMX Coprocessor
+17,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,431.68,270.39,1.5965,AMX Coprocessor
+18,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,431.77,273.59,1.5782,AMX Coprocessor
+19,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,430.99,273.17,1.5777,AMX Coprocessor
+20,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,439.43,275.98,1.5923,AMX Coprocessor
+21,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,442.04,272.37,1.6229,AMX Coprocessor
+22,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,443.21,275.74,1.6073,AMX Coprocessor
+23,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,433.26,272.65,1.5891,AMX Coprocessor
+24,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,431.96,273.96,1.5767,AMX Coprocessor
+25,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,436.12,267.0,1.6334,AMX Coprocessor
+26,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,437.03,270.06,1.6183,AMX Coprocessor
+27,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,434.75,268.88,1.6169,AMX Coprocessor
+28,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,433.8,274.94,1.5778,AMX Coprocessor
+29,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,438.64,276.15,1.5884,AMX Coprocessor
+30,MAYO (Multivariate),"MAYO-3 (m=96, n=99)",QuadFormEval,438.65,272.66,1.6088,AMX Coprocessor
+1,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1048.51,612.91,1.7107,AMX Coprocessor
+2,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1055.6,616.54,1.7121,AMX Coprocessor
+3,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1067.4,615.96,1.7329,AMX Coprocessor
+4,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1057.75,627.13,1.6867,AMX Coprocessor
+5,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1041.91,630.85,1.6516,AMX Coprocessor
+6,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1047.0,618.22,1.6936,AMX Coprocessor
+7,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1046.8,619.89,1.6887,AMX Coprocessor
+8,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1022.37,618.83,1.6521,AMX Coprocessor
+9,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1050.74,617.65,1.7012,AMX Coprocessor
+10,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1063.13,621.52,1.7105,AMX Coprocessor
+11,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1051.31,624.03,1.6847,AMX Coprocessor
+12,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1048.76,620.73,1.6896,AMX Coprocessor
+13,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1061.28,631.1,1.6816,AMX Coprocessor
+14,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1042.79,620.2,1.6814,AMX Coprocessor
+15,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1044.3,630.34,1.6567,AMX Coprocessor
+16,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1064.9,626.47,1.6998,AMX Coprocessor
+17,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1071.42,626.41,1.7104,AMX Coprocessor
+18,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1049.24,629.51,1.6668,AMX Coprocessor
+19,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1023.58,635.22,1.6114,AMX Coprocessor
+20,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1044.04,617.41,1.691,AMX Coprocessor
+21,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1069.45,608.23,1.7583,AMX Coprocessor
+22,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1050.65,634.94,1.6547,AMX Coprocessor
+23,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1069.28,621.75,1.7198,AMX Coprocessor
+24,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1060.58,618.08,1.7159,AMX Coprocessor
+25,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1047.93,627.52,1.67,AMX Coprocessor
+26,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1043.0,627.91,1.6611,AMX Coprocessor
+27,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1034.91,612.69,1.6891,AMX Coprocessor
+28,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1068.63,613.47,1.7419,AMX Coprocessor
+29,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1043.31,621.49,1.6787,AMX Coprocessor
+30,MAYO (Multivariate),"MAYO-5 (m=128, n=133)",QuadFormEval,1071.38,612.81,1.7483,AMX Coprocessor
