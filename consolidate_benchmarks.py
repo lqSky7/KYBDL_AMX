@@ -16,14 +16,19 @@ sort_priority = {
     "lightsaber": 6,
     "saber": 7,
     "firesaber": 8,
-    "stack": 9,
-    "mmap": 10,
-    "ref": 11,
-    "opt": 12,
-    "neon": 13,
-    "opt_amx": 14,
-    "amx_polymul": 15,
-    "amx_matmul": 16,
+    "kyber512": 9,
+    "kyber768": 10,
+    "kyber1024": 11,
+    "stack": 12,
+    "mmap": 13,
+    "ref": 14,
+    "opt": 15,
+    "neon": 16,
+    "opt_amx": 17,
+    "amx_polymul": 18,
+    "amx_matmul": 19,
+    "amx": 20,
+    "": 21,
 }
 
 
@@ -42,14 +47,6 @@ def write_benchmarks(scheme, worksheet, df, columns):
         {"align": "center", "bold": True, "num_format": "0.00"}
     )
     center_hv = workbook.add_format({"align": "center", "valign": "vcenter"})
-
-    # "Scheme or operation",
-    # "Parameter set",
-    # "Memory allocation",
-    # "Implementation",
-    # "Variant",
-    # "Operation",
-    # "Cycle count",
 
     match scheme:
         case "frodokem":
@@ -72,6 +69,13 @@ def write_benchmarks(scheme, worksheet, df, columns):
                 ("Encapsulation", "crypto_kem_enc"),
                 ("Decapsulation", "crypto_kem_dec"),
                 ("MatrixVectorMulRound", "MatrixVectorMulRound"),
+            ]
+        case "kyber":
+            benchmark_names = [
+                ("Key generation", "crypto_kem_keypair"),
+                ("Encapsulation", "crypto_kem_enc"),
+                ("Decapsulation", "crypto_kem_dec"),
+                ("MatrixVectorMul", "MatrixVectorMul"),
             ]
 
     impls = {}
@@ -99,6 +103,14 @@ def write_benchmarks(scheme, worksheet, df, columns):
                 "neon": "[BHK21]",
                 "amx_polymul": "Ours (polynomial multiplication)",
                 "amx_matmul": "Ours (matrix multiplication)",
+            }
+        }
+
+    for pset in ["kyber512", "kyber768", "kyber1024"]:
+        impls[pset] = {
+            "": {
+                "neon": "NEON baseline",
+                "amx": "Ours (AMX TMVP)",
             }
         }
 
@@ -138,106 +150,162 @@ def write_benchmarks(scheme, worksheet, df, columns):
                             cycle_count = int(
                                 df5[df5["Operation"] == op]["Cycle count"].iloc[0]
                             )
+                        except (IndexError, ValueError):
+                            continue
 
-                            worksheet.write(
-                                current_row,
-                                3 + benchmark_names.index((name, op)),
-                                cycle_count,
-                                center_h,
-                            )
-                        except IndexError:
-                            pass
+                        col = [name[0] for name in benchmark_names].index(name)
+                        worksheet.write(current_row, 3 + col, cycle_count, center_h)
 
                     current_row += 1
 
             worksheet.merge_range(
-                merge_memalloc_start, 1, current_row - 1, 1, memalloc, center_hv
+                merge_memalloc_start,
+                1,
+                current_row - 1,
+                1,
+                memalloc,
+                center_hv,
             )
 
-        worksheet.merge_range(current_row, 1, current_row, 2, "Speedup", center_h_bold)
-
-        for j in range(3, 3 + len(benchmark_names)):
-            formula = (
-                "{=ROUND(MIN(IF(RIGHT("
-                f"{xl_rowcol_to_cell(merge_pset_start, 2)}:"
-                f'{xl_rowcol_to_cell(current_row - 1, 2)})<>")",'
-                f"{xl_rowcol_to_cell(merge_pset_start, j)}:"
-                f'{xl_rowcol_to_cell(current_row - 1, j)},""'
-                "))/MIN(IF(RIGHT("
-                f"{xl_rowcol_to_cell(merge_pset_start, 2)}:"
-                f'{xl_rowcol_to_cell(current_row - 1, 2)})=")",'
-                f"{xl_rowcol_to_cell(merge_pset_start, j)}:"
-                f"{xl_rowcol_to_cell(current_row - 1, j)},"
-                '"")),2)}'
-            )
-
-            worksheet.write(current_row, j, formula, center_h_bold_2places)
-
-        worksheet.merge_range(merge_pset_start, 0, current_row, 0, pset, center_hv)
-
-        current_row += 1
-
-    worksheet.autofit()
-
-
-if __name__ == "__main__":
-    if len(sys.argv) == 1:
-        print("Usage: python consolidate_benchmarks.py <CPU name>")
-        sys.exit(1)
-
-    path = os.path.join(os.getcwd(), f"speed_results_{sys.argv[1]}")
-
-    if not os.path.isdir(path):
-        print(f"Directory {path} does not exist.")
-        sys.exit(1)
-
-    all_files = [
-        f
-        for f in os.listdir(path)
-        if os.path.isfile(os.path.join(path, f)) and ":" in f and f.endswith(".txt")
-    ]
-
-    data = []
-
-    for file in all_files:
-        row = file.split(".txt")[0].split(":")
-
-        with open(os.path.join(path, file), "r", encoding="utf-8") as f:
-            for line in f.read().splitlines():
-                if line:
-                    data.append(row + line.split(":"))
-
-    columns = [
-        "Scheme or operation",
-        "Parameter set",
-        "Memory allocation",
-        "Implementation",
-        "Variant",
-        "Operation",
-        "Cycle count",
-    ]
-
-    df = pd.DataFrame(data, columns=columns).sort_values(
-        by=columns[:-2], key=my_sort_pd
-    )
-
-    matcher = {
-        "frodokem": "(?:frodokem|matmul)",
-        "saber": "(?:saber|matrixvectormulround)",
-    }
-
-    workbook = xlsxwriter.Workbook(
-        os.path.join(f"speed_results_{sys.argv[1]}", "benchmarks.xlsx")
-    )
-    worksheet = {}
-    for scheme in ["frodokem", "saber"]:  # ["frodokem", "frodokem4x", "saber"]:
-        worksheet[scheme] = workbook.add_worksheet(scheme)
-
-        write_benchmarks(
-            scheme,
-            worksheet[scheme],
-            df[df["Scheme or operation"].str.contains(matcher[scheme])],
-            columns,
+        worksheet.merge_range(
+            merge_pset_start, 0, current_row - 1, 0, pset, center_hv
         )
 
-    workbook.close()
+    # Speedups
+    merge_speedups_start = current_row
+    for pset in sorted(df["Parameter set"].unique(), key=my_sort):
+        merge_pset_start = current_row
+
+        df2 = df[df["Parameter set"] == pset]
+
+        for memalloc in sorted(df2["Memory allocation"].unique(), key=my_sort):
+            merge_memalloc_start = current_row
+
+            df3 = df2[df2["Memory allocation"] == memalloc]
+
+            for work in sorted(df3["Implementation"].unique(), key=my_sort):
+                df4 = df3[df3["Implementation"] == work]
+
+                for variant in sorted(df4["Variant"].unique(), key=my_sort):
+                    impl = impls[pset][work][variant]
+                    if not impl:
+                        continue
+
+                    worksheet.write(
+                        current_row,
+                        2,
+                        f"Speedup of {impl} over reference",
+                        center_h_bold,
+                    )
+
+                    for name, op in benchmark_names:
+                        col = [name[0] for name in benchmark_names].index(name)
+
+                        # Excel formula for speedup calculation
+                        target_cell = xl_rowcol_to_cell(current_row, 3 + col)
+                        
+                        cell_range_ref = f"{xl_rowcol_to_cell(2, 3 + col)}:{xl_rowcol_to_cell(current_row - 1, 3 + col)}"
+                        
+                        formula = f"=IFISERROR(MIN(IF(ISNUMBER(SEARCH(\")\", $C$3:$C${current_row - 1})), {cell_range_ref})) / {xl_rowcol_to_cell(current_row - 1, 3 + col)}, \"\")"
+                        
+                        worksheet.write_formula(
+                            current_row, 3 + col, formula, center_h_bold_2places
+                        )
+
+                    current_row += 1
+
+
+if len(sys.argv) < 2:
+    print(f"Usage: {sys.argv[0]} CPU", file=sys.stderr)
+    sys.exit(1)
+
+cpu = sys.argv[1]
+results_dir = f"speed_results_{cpu}"
+
+if not os.path.exists(results_dir):
+    print(f"Directory {results_dir} does not exist", file=sys.stderr)
+    sys.exit(1)
+
+data = []
+
+for filename in os.listdir(results_dir):
+    if filename.startswith("sample") or not filename.endswith(".txt"):
+        continue
+
+    parts = filename[:-4].split(":")
+    if len(parts) != 5:
+        continue
+
+    scheme_op, pset, alloc, impl, variant = parts
+
+    with open(os.path.join(results_dir, filename), "r") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            op_parts = line.split(":")
+            if len(op_parts) != 2:
+                continue
+            op_name = op_parts[0].strip()
+            try:
+                cycles = int(op_parts[1].strip())
+            except ValueError:
+                continue
+
+            data.append(
+                {
+                    "Scheme or operation": scheme_op,
+                    "Parameter set": pset,
+                    "Memory allocation": alloc,
+                    "Implementation": impl,
+                    "Variant": variant,
+                    "Operation": op_name,
+                    "Cycle count": cycles,
+                }
+            )
+
+df = pd.DataFrame(data)
+
+if df.empty:
+    print("No benchmark data found.", file=sys.stderr)
+    sys.exit(1)
+
+excel_file = "benchmarks.xlsx"
+writer = pd.ExcelWriter(excel_file, engine="xlsxwriter")
+workbook = writer.book
+
+columns = [
+    "Scheme or operation",
+    "Parameter set",
+    "Memory allocation",
+    "Implementation",
+    "Variant",
+    "Operation",
+    "Cycle count",
+]
+
+for scheme in ["frodokem", "saber", "kyber"]:
+    df_scheme = df[
+        df["Parameter set"].isin(
+            [
+                "640_AES",
+                "640_SHAKE",
+                "976_AES",
+                "976_SHAKE",
+                "1344_AES",
+                "1344_SHAKE",
+            ]
+            if scheme == "frodokem"
+            else (
+                ["lightsaber", "saber", "firesaber"]
+                if scheme == "saber"
+                else ["kyber512", "kyber768", "kyber1024"]
+            )
+        )
+    ]
+    if not df_scheme.empty:
+        worksheet = workbook.add_worksheet(scheme)
+        write_benchmarks(scheme, worksheet, df_scheme, columns)
+
+writer.close()
+print(f"Successfully generated {excel_file} with Kyber, Saber, and FrodoKEM benchmark results.")
