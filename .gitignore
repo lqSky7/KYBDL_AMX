@@ -113,3 +113,24 @@ speed_results*/
 neon-ntt/lightsaber/m1-benchmarks/PQCkemKAT_1568.r*
 neon-ntt/saber/m1-benchmarks/PQCkemKAT_2304.r*
 neon-ntt/firesaber/m1-benchmarks/PQCkemKAT_3040.r*
+
+### Python ###
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+### macOS debug symbols ###
+*.dSYM
+
+### Scratch / bring-up artifacts ###
+# Keep scratch/*.c sources; ignore compiled Mach-O binaries (no extension)
+scratch/test_all_kernels
+scratch/test_diag
+scratch/test_kbatch
+scratch/test_mac16
+scratch/test_mac16_coords
+scratch/test_matint
+scratch/test_tiled_amx
