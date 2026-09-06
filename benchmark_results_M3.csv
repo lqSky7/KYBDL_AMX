@@ -1,0 +1,28 @@
+Scheme,ParameterSet,Alloc,Impl,Variant,Operation,Cycles
+matrixvectormul,kyber512,stack,,amx,MatrixVectorMul,405603
+matrixvectormul,kyber512,stack,,amx,MatrixVectorMul (no gen_matrix),410120
+kyber,kyber512,stack,,amx,crypto_kem_keypair,413278
+kyber,kyber512,stack,,amx,crypto_kem_enc,622325
+kyber,kyber512,stack,,amx,crypto_kem_dec,832558
+matrixvectormul,kyber512,stack,,neon,MatrixVectorMul,5384
+kyber,kyber512,stack,,neon,crypto_kem_keypair,13479
+kyber,kyber512,stack,,neon,crypto_kem_enc,14066
+kyber,kyber512,stack,,neon,crypto_kem_dec,20054
+kyber,kyber768,stack,,neon,crypto_kem_keypair,20933
+kyber,kyber768,stack,,neon,crypto_kem_enc,22087
+kyber,kyber768,stack,,neon,crypto_kem_dec,30939
+matrixvectormul,kyber768,stack,,neon,MatrixVectorMul,12037
+matrixvectormul,kyber1024,stack,,neon,MatrixVectorMul,18805
+kyber,kyber768,stack,,amx,crypto_kem_keypair,918005
+kyber,kyber768,stack,,amx,crypto_kem_enc,1234354
+kyber,kyber768,stack,,amx,crypto_kem_dec,1547285
+matrixvectormul,kyber768,stack,,amx,MatrixVectorMul,910692
+matrixvectormul,kyber768,stack,,amx,MatrixVectorMul (no gen_matrix),919459
+matrixvectormul,kyber1024,stack,,amx,MatrixVectorMul,1621016
+matrixvectormul,kyber1024,stack,,amx,MatrixVectorMul (no gen_matrix),1626024
+kyber,kyber1024,stack,,amx,crypto_kem_keypair,1626327
+kyber,kyber1024,stack,,amx,crypto_kem_enc,2049473
+kyber,kyber1024,stack,,amx,crypto_kem_dec,2493322
+kyber,kyber1024,stack,,neon,crypto_kem_keypair,29905
+kyber,kyber1024,stack,,neon,crypto_kem_enc,31707
+kyber,kyber1024,stack,,neon,crypto_kem_dec,45195

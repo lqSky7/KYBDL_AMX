@@ -1,0 +1,25 @@
+\begin{table}[ht]
+\centering
+\caption{Cycle counts (in thousands) and speedup ratios for ML-KEM on Apple M3.}
+\label{tab:mlkem_m3}
+\begin{tabular}{l l r r r}
+\hline
+\textbf{Parameter Set} & \textbf{Operation} & \textbf{NEON Baseline} & \textbf{AMX TMVP (Ours)} & \textbf{Speedup} \\
+\hline
+KYBER512 & KeyGen & 13.48k & 413.28k & \textbf{0.03$\times$} \\
+KYBER512 & Encaps & 14.07k & 622.33k & \textbf{0.02$\times$} \\
+KYBER512 & Decaps & 20.05k & 832.56k & \textbf{0.02$\times$} \\
+KYBER512 & MatVecMul & 5.38k & 405.60k & \textbf{0.01$\times$} \\
+\hline
+KYBER768 & KeyGen & 20.93k & 918.00k & \textbf{0.02$\times$} \\
+KYBER768 & Encaps & 22.09k & 1234.35k & \textbf{0.02$\times$} \\
+KYBER768 & Decaps & 30.94k & 1547.29k & \textbf{0.02$\times$} \\
+KYBER768 & MatVecMul & 12.04k & 910.69k & \textbf{0.01$\times$} \\
+\hline
+KYBER1024 & KeyGen & 29.91k & 1626.33k & \textbf{0.02$\times$} \\
+KYBER1024 & Encaps & 31.71k & 2049.47k & \textbf{0.02$\times$} \\
+KYBER1024 & Decaps & 45.20k & 2493.32k & \textbf{0.02$\times$} \\
+KYBER1024 & MatVecMul & 18.80k & 1621.02k & \textbf{0.01$\times$} \\
+\hline
+\end{tabular}
+\end{table}

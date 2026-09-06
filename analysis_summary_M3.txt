@@ -1,0 +1,25 @@
+================================================================================
+AMORTIZATION-ADJUSTED ANALYSIS: NEON NTT vs AMX TMVP for ML-KEM
+================================================================================
+Key Research Insight:
+ - NEON NTT amortizes cost by storing pre-NTT transformed A & s in keys.
+ - AMX TMVP operates directly on coefficient polynomials (no precomputation).
+--------------------------------------------------------------------------------
+
+--- Parameter Set: KYBER512 ---
+  crypto_kem_keypair  : NEON =    13479 cycles | AMX =   413278 cycles | Speedup =   0.03x
+  crypto_kem_enc      : NEON =    14066 cycles | AMX =   622325 cycles | Speedup =   0.02x
+  crypto_kem_dec      : NEON =    20054 cycles | AMX =   832558 cycles | Speedup =   0.02x
+  MatrixVectorMul     : NEON =     5384 cycles | AMX =   405603 cycles | Speedup =   0.01x
+
+--- Parameter Set: KYBER768 ---
+  crypto_kem_keypair  : NEON =    20933 cycles | AMX =   918005 cycles | Speedup =   0.02x
+  crypto_kem_enc      : NEON =    22087 cycles | AMX =  1234354 cycles | Speedup =   0.02x
+  crypto_kem_dec      : NEON =    30939 cycles | AMX =  1547285 cycles | Speedup =   0.02x
+  MatrixVectorMul     : NEON =    12037 cycles | AMX =   910692 cycles | Speedup =   0.01x
+
+--- Parameter Set: KYBER1024 ---
+  crypto_kem_keypair  : NEON =    29905 cycles | AMX =  1626327 cycles | Speedup =   0.02x
+  crypto_kem_enc      : NEON =    31707 cycles | AMX =  2049473 cycles | Speedup =   0.02x
+  crypto_kem_dec      : NEON =    45195 cycles | AMX =  2493322 cycles | Speedup =   0.02x
+  MatrixVectorMul     : NEON =    18805 cycles | AMX =  1621016 cycles | Speedup =   0.01x
