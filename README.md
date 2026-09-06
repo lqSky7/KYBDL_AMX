@@ -1,53 +1,78 @@
-This is the source code accompanying the paper "PQC-AMX: Accelerating Saber and FrodoKEM on the Apple M1 and M3 SoCs". This is a list of folders and their contents:
+# PQC-AMX
 
-- `aes`: Implementations of routines related to FrodoKEM-AES "A" matrix generation, using ARMv8's Cryptographic Extensions instructions.
-- `amx`: [AMX macros from Peter Cawley](https://github.com/corsix/amx) (`aarch64.h`), plus helper macros of our own (`amx.h`) and implementations of routines described in our paper;
-- `googletest`: a copy of the [Google Test](https://github.com/google/googletest/) library;
-- `neon-ntt`: relevant files from the paper ["Neon NTT: Faster Dilithium, Kyber, and Saber on Cortex-A72 and Apple M1"](https://eprint.iacr.org/2021/986), obtained from the associated [GitHub repository](https://github.com/neon-ntt/neon-ntt), with some modifications as described in our paper. Also includes our AMX implementation of Saber;
-- `PQCrypto-LWEKE`: relevant files from the reference and optimized implementations of [FrodoKEM](https://frodokem.org), obtained from the associated [GitHub repository](https://github.com/microsoft/PQCrypto-LWEKE), with some modifications as described in our paper. Also includes our NEON and AMX implementations of FrodoKEM;
-- `rng_opt`: an optimized implementation of the NIST `randombytes` routines, based on AES-256 CTR-DRBG, implemented using AES instructions available in the ARMv8-A Cryptographic Extensions;
-- `speed`: benchmarking harnesses for our implementations, constant-time experiment for the "genlut" instruction and our AES-ECB routines for FrodoKEM.
-- `speed_results_M1`: raw benchmark results in the M1, and an Excel spreadsheet compiling them, generated using a Python script discussed [below](#Helper-scripts-for-benchmarking-and-constant-time-experiments);
-- `speed_results_M3`: raw benchmark results in the M3, and an Excel spreadsheet compiling them, generated using a Python script discussed [below](#Helper-scripts-for-benchmarking-and-constant-time-experiments);
-- `test`: tests (using the [Google Test](https://github.com/google/googletest/) library) to validate various aspects of the implementation;
+Code for accelerating post-quantum crypto with the AMX matrix coprocessor on Apple Silicon (M1/M3).
 
-The root folder also includes some files of note:
+Started with Saber and FrodoKEM. Now also covers ML-KEM (Kyber), MAYO, HQC, and SNTRUP Prime, plus two AMX demos: quantized 2D convolution and quantized vector search.
 
-- `run_benchmarks.sh`: a helper script to run benchmarks (see instructions [below](#Helper-scripts-for-benchmarking-and-constant-time-experiments));
-- `consolidate_benchmarks.py`: a Python 3 script to consolidate benchmark results from different systems into a single Microsoft Excel file.
+## Layout
 
-# Building the code
+- `amx/`: AMX helpers and Saber/FrodoKEM routines. Also `amx_vector_search.c`, the vector search engine.
+- `amx_conv2d/`: quantized 2D image convolution on AMX (`im2col` + GEMM).
+- `kyber/`: Kyber/ML-KEM AMX polymul plus NEON backends (512/768/1024).
+- `mayo_uov/`: MAYO/UOV GF(16) AMX code.
+- `hqc/`: HQC binary-polynomial (GF2x) ref, NEON, and AMX code.
+- `sntrup761/`: SNTRUP-761 polynomial ref, NEON, and AMX code.
+- `aes/`, `neon-ntt/`, `PQCrypto-LWEKE/`, `rng_opt/`: supporting crypto and RNG code, mostly from prior work (see original README history).
+- `speed/`: benchmark programs. `wallclock.h` adds wall-clock timing next to the cycle counter.
+- `test/`: Google Test checks for each scheme and engine.
+- `scratch/`: small bring-up experiments (sources only; binaries are ignored).
+- `analysis/`, `generate_figures.py`, `generate_jasp_dataset.py`: tables, plots, and datasets.
+- `figures/`, `figures2/`, `paper_figures_fixed/`: figure sources and curated sets.
+- `paper.tex`: the paper source.
+- `run_benchmarks.sh`, `consolidate_benchmarks.py`: run and collect benchmarks.
 
-We use [CMake](https://cmake.org) as our build system. It can be installed using [Homebrew](https://brew.sh) with the command `brew install cmake`. A typical sequence of commands to build the code, starting from the root folder of the repository, is:
+## Requirements
+
+- An Apple Silicon Mac (M1/M3 tested).
+- CMake. Install with `brew install cmake`.
+- Python 3 with `pandas` and `xlsxwriter` only for consolidating results.
+- `sudo` access for benchmarks (cycle counter).
+
+## Build
+
+From the repo root:
 
 ```
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
-make
+cmake --build .
 ```
 
-**NOTE**: for the tested compilers, there is a register allocation issue when the optimized `randombytes` routine is compiled in Debug mode (i.e. passing `-DCMAKE_BUILD_TYPE=Debug` to CMake), and the build fails. However, in RelWithDebInfo and Release mode, there is no issue.
+Use Release. Debug can fail on the optimized `randombytes` routine due to a register allocation issue.
 
-# Running tests
+## Tests
 
-Compilation produces many test binaries in the build folder (`build/test_*` if using the directions in [Building the code](#building-the-code) above). While it is possible to run each binary directly, we recommend using the `ctest` utility from CMake to run all available tests with a single invocation. `ctest` also runs additional tests that automate the process of comparing KATs using the `PQCgenKAT_kem_*` binaries.
+From the `build` directory:
 
-# Running benchmarks
+```
+ctest
+```
 
-Compilation produces many benchmarking binaries in the build folder (`build/speed_*` if using the directions in [Building the code](#building-the-code) above). Each binary may be run directly, or a full benchmark set can be automatically run using the helper scripts described in [Benchmarking helper scripts](#benchmarking-helper-scripts) below.
+This runs all Google Test binaries, including KAT comparisons. You can also run a single test binary directly, e.g. `./test_kyber_kem`.
 
-Note that binaries must be run with `sudo` to allow access the cycle counter.
+## Benchmarks
 
-# Helper scripts for benchmarking and constant-time experiment for the "genlut" instruction
+Binaries start with `speed_`. Run one directly, or run the full set:
 
-We provide a helper script to automatically run all available benchmarks (except for those related to the RNG), in the form of `run_benchmarks.sh`. It must be run from the root folder of the repository, and places their results in a folder called `speed_results_Mx`, where `Mx` will be replaced by the CPU name in the machine where the script is run, e.g. `M1`, `M2` or `M3`; this is obtained from `sysctl -n machdep.cpu.brand_string`. Each executable file that is run creates an associated text file containing the benchmark results, with a self-explanatory naming scheme.
+```
+sudo caffeinate ./run_benchmarks.sh
+```
 
-A Python 3 script, `consolidate_benchmarks.py`, can be run afterwards (also from the root folder of the repository). It requires the [`pandas`](https://pandas.pydata.org) and [`xlsxwriter`](https://pypi.org/project/XlsxWriter/) packages, which can be installed using `pip`.
+Run from the repo root. Results go to `speed_results_Mx` (x = your chip, e.g. M3). Close apps, turn off WiFi/Bluetooth, and plug in power for stable numbers.
 
-This script reads all results from the `speed_results_Mx` folder and generates a Microsoft Excel file displaying them in a tabular form, in a format suitable for comparison with the results presented in our paper.
+To combine results into a spreadsheet:
 
-# License
+```
+python3 consolidate_benchmarks.py
+```
 
-Our work builds upon many other libraries and implementations, with different licenses for each. Any modifications that we make to an existing work is released under the same original license as that work. As for our original code, we release it under the [Creative Commons CC0 1.0 Universal (CC0 1.0)
-Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+## Paper and figures
+
+- `paper.tex` is the paper source.
+- `generate_figures.py` rebuilds the plots from benchmark CSVs.
+- `analysis/generate_tables.py` rebuilds the LaTeX tables.
+
+## License
+
+Third-party code keeps its original license. Our changes to it use the same license. Our original code is CC0 1.0 (public domain). See `LICENSE` and per-folder headers.
