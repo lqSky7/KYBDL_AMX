@@ -49,23 +49,28 @@ ninja
 echo Waiting for the system to cool down for ${COOLDOWN_BEGINNING} seconds...
 sleep ${COOLDOWN_BEGINNING}
 
-SCHEMES=("frodokem" "saber")
+SCHEMES=("frodokem" "saber" "kyber")
 PARAMETER_SETS_saber=("lightsaber" "saber" "firesaber")
+PARAMETER_SETS_kyber=("kyber512" "kyber768" "kyber1024")
 declare -A PARAMETER_SETS=(
     [frodokem]="640_AES,640_SHAKE,976_AES,976_SHAKE,1344_AES,1344_SHAKE"
     [saber]="lightsaber,saber,firesaber"
+    [kyber]="kyber512,kyber768,kyber1024"
 )
 declare -A IMPLS=(
     [frodokem]="ref"
     [saber]="BHK"
+    [kyber]=""
 )
 declare -A VARIANTS=(
     [frodokem]="ref,opt,neon,opt_amx"
     [saber]="neon,amx_polymul,amx_matmul"
+    [kyber]="neon,amx"
 )
 declare -A SPEED_SUBROUTINE_PREFIXES=(
     [frodokem]="matmul"
     [saber]="matrixvectormulround"
+    [kyber]="matrixvectormul"
 )
 
 for SCHEME ("$SCHEMES[@]")
@@ -87,9 +92,9 @@ do
                             SCHEME_PARAMETER_SET=${PARAMETER_SET}
                         fi
 
-                        if [ "$VARIANT" = "" ]
+                        if [ "$IMPL" = "" ]
                         then
-                            SPEED_EXEC=speed${BATCHING}_${SCHEME_PARAMETER_SET}_${ALLOC}_${IMPL}
+                            SPEED_EXEC=speed${BATCHING}_${SCHEME_PARAMETER_SET}_${ALLOC}_${VARIANT}
                         else
                             SPEED_EXEC=speed${BATCHING}_${SCHEME_PARAMETER_SET}_${ALLOC}_${IMPL}_${VARIANT}
                         fi
@@ -111,7 +116,12 @@ do
                             sleep ${COOLDOWN_MIDDLE}
 
                             PREFIX=${SPEED_SUBROUTINE_PREFIXES[${SCHEME}]}
-                            SPEED_SUBROUTINE_EXEC=speed${BATCHING}_${PREFIX}_${SCHEME_PARAMETER_SET}_${ALLOC}_${IMPL}_${VARIANT}
+                            if [ "$IMPL" = "" ]
+                            then
+                                SPEED_SUBROUTINE_EXEC=speed${BATCHING}_${PREFIX}_${SCHEME_PARAMETER_SET}_${ALLOC}_${VARIANT}
+                            else
+                                SPEED_SUBROUTINE_EXEC=speed${BATCHING}_${PREFIX}_${SCHEME_PARAMETER_SET}_${ALLOC}_${IMPL}_${VARIANT}
+                            fi
 
                             if [ -f ${SPEED_SUBROUTINE_EXEC} ]
                             then
