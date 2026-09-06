@@ -1,0 +1,172 @@
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, calc, patterns, decorations.pathreplacing}
+\usepackage{amsmath}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Stealth,
+    font=\sffamily\small,
+    tensor/.style={draw, thick, fill=#1!15, minimum width=2.2cm, minimum height=2.8cm},
+    matrix/.style={draw, thick, fill=#1!15},
+    label node/.style={font=\sffamily\footnotesize, text=black},
+    arrow label/.style={font=\sffamily\scriptsize\bfseries, fill=white, inner sep=2pt},
+]
+
+% =========================================================================
+% Panel A: Input tensor with sliding windows
+% =========================================================================
+\begin{scope}[shift={(0,0)}]
+
+    % Draw 3 stacked planes (channels) with isometric offset
+    \def\pw{2.4}   % plane width
+    \def\ph{2.4}   % plane height
+    \def\dx{0.25}  % x offset per channel
+    \def\dy{0.25}  % y offset per channel
+
+    % Back plane (channel 2)
+    \fill[blue!8, draw=blue!40, thick]
+        (2*\dx, 2*\dy) rectangle +(\pw, \ph);
+    % Middle plane (channel 1)
+    \fill[blue!12, draw=blue!50, thick]
+        (\dx, \dy) rectangle +(\pw, \ph);
+    % Front plane (channel 0) with grid
+    \fill[blue!18, draw=blue!60, thick]
+        (0,0) rectangle (\pw, \ph);
+
+    % Draw 8x8 grid on front plane
+    \foreach \i in {1,...,7} {
+        \draw[blue!20, very thin] (\i*\pw/8, 0) -- (\i*\pw/8, \ph);
+        \draw[blue!20, very thin] (0, \i*\ph/8) -- (\pw, \i*\ph/8);
+    }
+
+    % Sliding window 1 (top-left region)
+    \def\wa{0}           % window A x start (grid units)
+    \def\wb{1.5}         % window A y start
+    \fill[orange!35, draw=orange!80, very thick, rounded corners=1pt]
+        (\wa*\pw/8, \wb*\ph/8+0.3) rectangle +({3*\pw/8}, {3*\ph/8});
+
+    % Sliding window 2 (shifted right by stride)
+    \def\wc{2}
+    \def\wd{1.5}
+    \fill[red!25, draw=red!70, very thick, rounded corners=1pt]
+        (\wc*\pw/8, \wd*\ph/8+0.3) rectangle +({3*\pw/8}, {3*\ph/8});
+
+    % Stride arrow between the two windows
+    \draw[->, thick, dashed, blue!70]
+        ({(\wa+1.5)*\pw/8}, {\wb*\ph/8+0.15})
+        -- node[below, arrow label, text=blue!70] {$s_w$}
+        ({(\wc+1.5)*\pw/8}, {\wd*\ph/8+0.15});
+
+    % Label beneath
+    \node[below=6pt, label node] at (\pw/2 + \dx, 0)
+        {$X$:\; $C_{in} \!\times\! H \!\times\! W$};
+
+    % Panel label
+    \node[above=4pt, font=\sffamily\footnotesize\bfseries] at (\pw/2 + \dx, \ph + 2*\dy)
+        {(A) Input tensor};
+\end{scope}
+
+% =========================================================================
+% Arrow A -> B
+% =========================================================================
+\draw[->, line width=1.8pt, blue!60!black]
+    (3.4, 1.4) -- node[above, arrow label] {\texttt{im2col}} (5.0, 1.4);
+
+% =========================================================================
+% Panel B: Unfolded patch matrix im2col(X)
+% =========================================================================
+\begin{scope}[shift={(5.2, -0.2)}]
+    \def\mw{1.6}   % matrix width (K dimension)
+    \def\mh{3.2}   % matrix height (N dimension)
+
+    % Matrix body
+    \fill[orange!12, draw=orange!60, thick]
+        (0, 0) rectangle (\mw, \mh);
+
+    % Draw a few horizontal row dividers
+    \foreach \i in {1,...,7} {
+        \draw[orange!25, very thin] (0, \i*\mh/8) -- (\mw, \i*\mh/8);
+    }
+
+    % Highlight one row (row 2 from top)
+    \fill[orange!40, draw=orange!80, thick]
+        (0, 5*\mh/8) rectangle (\mw, 6*\mh/8);
+
+    % Row label
+    \node[right=3pt, label node, text=orange!80!black, font=\sffamily\tiny]
+        at (\mw, 5.5*\mh/8)
+        {row $n$};
+
+    % Axis labels
+    \draw[decorate, decoration={brace, amplitude=4pt, mirror}, thick]
+        (0, -0.15) -- node[below=4pt, label node] {$K$} (\mw, -0.15);
+    \draw[decorate, decoration={brace, amplitude=4pt}, thick]
+        (-0.15, 0) -- node[left=4pt, label node, rotate=90, anchor=south] {$N$} (-0.15, \mh);
+
+    % Label beneath
+    \node[below=14pt, label node] at (\mw/2, 0)
+        {$\mathrm{im2col}(X)$};
+
+    % Panel label
+    \node[above=4pt, font=\sffamily\footnotesize\bfseries] at (\mw/2, \mh)
+        {(B) Patch matrix};
+\end{scope}
+
+% =========================================================================
+% Arrow B -> C
+% =========================================================================
+\draw[->, line width=1.8pt, blue!60!black]
+    (7.4, 1.4) -- node[above, arrow label] {GEMM} (8.8, 1.4);
+
+% =========================================================================
+% Panel C: GEMM  Y = im2col(X) x W^T
+% =========================================================================
+\begin{scope}[shift={(9.0, 0.0)}]
+    % im2col(X) box
+    \def\aw{0.9}
+    \def\ah{2.4}
+    \fill[orange!12, draw=orange!60, thick]
+        (0, 0) rectangle (\aw, \ah);
+    \node[label node, font=\sffamily\tiny] at (\aw/2, \ah/2)
+        {$N \!\times\! K$};
+
+    % Multiplication sign
+    \node[font=\large] at (\aw + 0.35, \ah/2) {$\times$};
+
+    % W^T box
+    \def\bw{1.6}
+    \def\bh{0.9}
+    \fill[blue!12, draw=blue!60, thick]
+        (\aw + 0.7, \ah - \bh) rectangle +(\bw, \bh);
+    \node[label node, font=\sffamily\tiny] at (\aw + 0.7 + \bw/2, \ah - \bh/2)
+        {$K \!\times\! C_{out}$};
+    \node[below=1pt, label node, font=\sffamily\tiny] at (\aw + 0.7 + \bw/2, \ah - \bh)
+        {$W^\top$};
+
+    % Equals sign
+    \node[font=\large] at (\aw + 0.7 + \bw + 0.35, \ah/2) {$=$};
+
+    % Output Y box
+    \def\cw{1.6}
+    \def\ch{2.4}
+    \fill[green!12, draw=green!60!black, thick]
+        (\aw + 0.7 + \bw + 0.7, 0) rectangle +(\cw, \ch);
+    \node[label node, font=\sffamily\tiny] at (\aw + 0.7 + \bw + 0.7 + \cw/2, \ch/2)
+        {$N \!\times\! C_{out}$};
+    \node[below=1pt, label node, font=\sffamily\tiny]
+        at (\aw + 0.7 + \bw + 0.7 + \cw/2, 0) {$Y$};
+
+    % Panel label
+    \node[above=4pt, font=\sffamily\footnotesize\bfseries]
+        at (\aw + 0.7 + \bw/2, \ah) {(C) Matrix multiply};
+\end{scope}
+
+% =========================================================================
+% Bottom equation
+% =========================================================================
+\node[below=28pt, font=\sffamily\small, text=black!80] at (7.5, -0.2)
+    {$Y = \mathrm{im2col}(X) \times W^\top \quad\;\; (N \times C_{out})$};
+
+\end{tikzpicture}
+\end{document}
