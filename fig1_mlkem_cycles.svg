@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="400" y="35" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#222222">ML-KEM (Kyber) Execution Latency: NEON NTT vs AMX TMVP (Apple M3)</text>
+  <text x="400" y="55" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#666666">Cycles in Thousands (Lower is Better)</text>
+  <line x1="80" y1="400.0" x2="760" y2="400.0" stroke="#e0e0e0" stroke-dasharray="3,3"/>
+  <text x="70" y="404.0" font-family="sans-serif" font-size="11" text-anchor="end" fill="#555">0k</text>
+  <line x1="80" y1="353.84615384615387" x2="760" y2="353.84615384615387" stroke="#e0e0e0" stroke-dasharray="3,3"/>
+  <text x="70" y="357.84615384615387" font-family="sans-serif" font-size="11" text-anchor="end" fill="#555">100k</text>
+  <line x1="80" y1="307.6923076923077" x2="760" y2="307.6923076923077" stroke="#e0e0e0" stroke-dasharray="3,3"/>
+  <text x="70" y="311.6923076923077" font-family="sans-serif" font-size="11" text-anchor="end" fill="#555">200k</text>
+  <line x1="80" y1="261.53846153846155" x2="760" y2="261.53846153846155" stroke="#e0e0e0" stroke-dasharray="3,3"/>
+  <text x="70" y="265.53846153846155" font-family="sans-serif" font-size="11" text-anchor="end" fill="#555">300k</text>
+  <line x1="80" y1="215.3846153846154" x2="760" y2="215.3846153846154" stroke="#e0e0e0" stroke-dasharray="3,3"/>
+  <text x="70" y="219.3846153846154" font-family="sans-serif" font-size="11" text-anchor="end" fill="#555">400k</text>
+  <line x1="80" y1="169.23076923076923" x2="760" y2="169.23076923076923" stroke="#e0e0e0" stroke-dasharray="3,3"/>
+  <text x="70" y="173.23076923076923" font-family="sans-serif" font-size="11" text-anchor="end" fill="#555">500k</text>
+  <line x1="80" y1="123.07692307692304" x2="760" y2="123.07692307692304" stroke="#e0e0e0" stroke-dasharray="3,3"/>
+  <text x="70" y="127.07692307692304" font-family="sans-serif" font-size="11" text-anchor="end" fill="#555">600k</text>
+  <rect x="90.75" y="393.81538461538463" width="29.749999999999996" height="6.184615384615385" fill="#2b5c8f" rx="3"/>
+  <rect x="124.5" y="333.86153846153843" width="29.749999999999996" height="66.13846153846154" fill="#d95f02" rx="3"/>
+  <text x="122.5" y="420" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#222222">K512 KeyGen</text>
+  <rect x="175.75" y="393.4923076923077" width="29.749999999999996" height="6.507692307692308" fill="#2b5c8f" rx="3"/>
+  <rect x="209.5" y="307.7846153846154" width="29.749999999999996" height="92.21538461538462" fill="#d95f02" rx="3"/>
+  <text x="207.5" y="420" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#222222">K512 Encaps</text>
+  <rect x="260.75" y="390.7230769230769" width="29.749999999999996" height="9.276923076923078" fill="#2b5c8f" rx="3"/>
+  <rect x="294.5" y="282.2153846153846" width="29.749999999999996" height="117.78461538461538" fill="#d95f02" rx="3"/>
+  <text x="292.5" y="420" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#222222">K512 Decaps</text>
+  <rect x="345.75" y="397.5076923076923" width="29.749999999999996" height="2.4923076923076923" fill="#2b5c8f" rx="3"/>
+  <rect x="379.5" y="336.95384615384614" width="29.749999999999996" height="63.04615384615384" fill="#d95f02" rx="3"/>
+  <text x="377.5" y="420" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#222222">K512 MatVec</text>
+  <rect x="430.75" y="389.84615384615387" width="29.749999999999996" height="10.153846153846153" fill="#2b5c8f" rx="3"/>
+  <rect x="464.5" y="224.7076923076923" width="29.749999999999996" height="175.2923076923077" fill="#d95f02" rx="3"/>
+  <text x="462.5" y="420" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#222222">K768 Encaps</text>
+  <rect x="515.75" y="394.4153846153846" width="29.749999999999996" height="5.584615384615384" fill="#2b5c8f" rx="3"/>
+  <rect x="549.5" y="263.61538461538464" width="29.749999999999996" height="136.3846153846154" fill="#d95f02" rx="3"/>
+  <text x="547.5" y="420" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#222222">K768 MatVec</text>
+  <rect x="600.75" y="385.3692307692308" width="29.749999999999996" height="14.63076923076923" fill="#2b5c8f" rx="3"/>
+  <rect x="634.5" y="125.93846153846152" width="29.749999999999996" height="274.0615384615385" fill="#d95f02" rx="3"/>
+  <text x="632.5" y="420" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#222222">K1024 Encaps</text>
+  <rect x="685.75" y="391.2769230769231" width="29.749999999999996" height="8.723076923076922" fill="#2b5c8f" rx="3"/>
+  <rect x="719.5" y="160.6" width="29.749999999999996" height="239.4" fill="#d95f02" rx="3"/>
+  <text x="717.5" y="420" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#222222">K1024 MatVec</text>
+  <rect x="520" y="70" width="16" height="16" fill="#2b5c8f" rx="2"/>
+  <text x="545" y="83" font-family="sans-serif" font-size="12" fill="#222222">NEON Baseline (NTT)</text>
+  <rect x="670" y="70" width="16" height="16" fill="#d95f02" rx="2"/>
+  <text x="695" y="83" font-family="sans-serif" font-size="12" fill="#222222">AMX TMVP (Ours)</text>
+</svg>
