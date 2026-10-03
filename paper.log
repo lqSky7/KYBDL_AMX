@@ -1,0 +1,2066 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.14)  1 OCT 2026 09:45
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**paper.tex
+(./paper.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(./FrontiersinHarvard.cls
+Document Class: FrontiersinHarvard 2016/11/10 2.6
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/crop/crop.sty
+Package: crop 2017/11/19 1.10 crop marks (mf)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\CROP@index=\count275
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\CROP@offset=\count276
+Package crop Info: Local config file crop.cfg used on input line 622.
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/xelatex/xetexconfig/crop.cfg))
+==> First Aid for crop.sty applied!
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+\Gin@req@height=\dimen148
+\Gin@req@width=\dimen149
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen150
+))
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen151
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count277
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count278
+\leftroot@=\count279
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count280
+\DOTSCASE@=\count281
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen152
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count282
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count283
+\dotsspace@=\muskip17
+\c@parentequation=\count284
+\dspbrk@lvl=\count285
+\tag@help=\toks21
+\row@=\count286
+\column@=\count287
+\maxfields@=\count288
+\andhelp@=\toks22
+\eqnshift@=\dimen153
+\alignsep@=\dimen154
+\tagshift@=\dimen155
+\tagwidth@=\dimen156
+\totwidth@=\dimen157
+\lineht@=\dimen158
+\@envbody=\toks23
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen159
+\ar@mcellbox=\box55
+\extrarowheight=\dimen160
+\NC@list=\toks25
+\extratabsurround=\skip52
+\backup@length=\skip53
+\ar@cellbox=\box56
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks26
+\thm@bodyfont=\toks27
+\thm@headfont=\toks28
+\thm@notefont=\toks29
+\thm@headpunct=\toks30
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks31
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.
+sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.s
+ty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/parskip/parskip.sty
+Rollback for package 'parskip' requested -> version 'v1'.
+         This corresponds to the release introduced on 2001-04-09.
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/parskip/parskip-2001-04-09.s
+ty
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+
+Package xcolor Warning: Package option `usenames' is obsolete and ignored on in
+put line 265.
+
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+LaTeX Info: Redefining \color on input line 762.
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen161
+\captionmargin=\dimen162
+\caption@leftmargin=\dimen163
+\caption@rightmargin=\dimen164
+\caption@width=\dimen165
+\caption@indent=\dimen166
+\caption@parindent=\dimen167
+\caption@hangindent=\dimen168
+\abovecaptionskip=\skip57
+\belowcaptionskip=\skip58
+Package caption Info: Document class w/o caption stuff detected.
+)
+\c@caption@flags=\count289
+\c@continuedfloat=\count290
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+)
+\c@section=\count291
+\c@subsection=\count292
+\c@subsubsection=\count293
+\c@paragraph=\count294
+\c@subparagraph=\count295
+\c@figure=\count296
+\c@subfigure=\count297
+\c@table=\count298
+
+! Undefined control sequence.
+l.383   \newdateformat
+                      {mydate}{\THEDAY \ \monthname[\THEMONTH] \THEYEAR}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383   \newdateformat{m
+                        ydate}{\THEDAY \ \monthname[\THEMONTH] \THEYEAR}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.383   \newdateformat{mydate}{\THEDAY
+                                       \ \monthname[\THEMONTH] \THEYEAR}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.383 ...ewdateformat{mydate}{\THEDAY \ \monthname
+                                                  [\THEMONTH] \THEYEAR}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.383 ...at{mydate}{\THEDAY \ \monthname[\THEMONTH
+                                                  ] \THEYEAR}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.383 ...{\THEDAY \ \monthname[\THEMONTH] \THEYEAR
+                                                  }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.384   \newdateformat
+                      {mydate2}{\monthname[\THEMONTH] \THEYEAR}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.384   \newdateformat{mydate2}{\monthname
+                                          [\THEMONTH] \THEYEAR}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.384 ...wdateformat{mydate2}{\monthname[\THEMONTH
+                                                  ] \THEYEAR}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.384 ...t{mydate2}{\monthname[\THEMONTH] \THEYEAR
+                                                  }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (46.39653pt too wide) in paragraph at lines 383--385
+[]\OT1/cmr/m/n/12 mydate
+ []
+
+
+Overfull \hbox (6.52771pt too wide) in paragraph at lines 383--385
+\OT1/cmr/m/n/12 []
+ []
+
+
+Overfull \hbox (50.26337pt too wide) in paragraph at lines 383--385
+\OT1/cmr/m/n/12 mydate2[]
+ []
+
+\dropfromtop=\skip59
+\extraspace=\skip60
+\aboveskipchk=\skip61
+\rotdimen=\dimen169
+\tempdime=\dimen170
+\temptbox=\box57
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip62
+\bibsep=\skip63
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count299
+)
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.909 \twocolumn
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 909.
+
+! Undefined control sequence.
+\@thehead ...}\selectfont \strut \firstAuthorLast 
+                                                  }\hfill \strut \rightmark ...
+l.909 \twocolumn
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (504.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+Overfull \vbox (1.0pt too high) has occurred while \output is active []
+
+
+! Undefined control sequence.
+\set@color ...\@pdfcolorstack push{\current@color 
+                                                  }\aftergroup \reset@color 
+l.909 \twocolumn
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (504.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[1{/usr/local/texlive/2026basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/gettitlestring/gettitlestr
+ing.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count300
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count301
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen171
+\Hy@linkcounter=\count302
+\Hy@pagecounter=\count303
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count304
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4468.
+LaTeX Info: Redefining \href on input line 4718.
+\c@Hy@tempcnt=\count305
+LaTeX Info: Redefining \url on input line 4807.
+\XeTeXLinkMargin=\dimen172
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count306
+\Field@Width=\dimen173
+\Fld@charsize=\dimen174
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring OFF on input line 6104.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
+\Hy@abspage=\count307
+\c@Item=\count308
+\c@Hfootnote=\count309
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
+\Fld@listcount=\count310
+\c@bookmark@seq@number=\count311
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/rerunfilecheck/rerunfilechec
+k.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/uniquecounter/uniquecounte
+r.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip64
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
+\MT@toks=\toks32
+\MT@tempbox=\box58
+\MT@count=\count312
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
+LaTeX Info: Redefining \leftprotrusion on input line 1085.
+\MT@prot@toks=\toks33
+LaTeX Info: Redefining \rightprotrusion on input line 1104.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen175
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count313
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/microtype/microtype-pdftex.d
+ef
+File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip65
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.d
+ef
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count314
+) (./paper.aux)
+\openout1 = `paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count315
+\scratchdimen=\dimen176
+\scratchbox=\box59
+\nofMPsegments=\count316
+\nofMParguments=\count317
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count318
+\MPscratchDim=\dimen177
+\MPnumerator=\count319
+\makeMPintoPDFobject=\count320
+\everyMPtoPDFconversion=\toks35
+)
+Package crop Info: requested driver: `' on input line 43.
+Package crop Info: detected driver: `pdftex' on input line 43.
+Package crop Info: using `pdftex' graphics driver on input line 43.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring OFF on input line 43.
+ (./paper.out) (./paper.out)
+\@outlinefile=\write3
+\openout3 = `paper.out'.
+
+LaTeX Info: Redefining \microtypecontext on input line 43.
+Package microtype Info: Applying patch `item' on input line 43.
+Package microtype Info: Applying patch `toc' on input line 43.
+Package microtype Info: Applying patch `eqnum' on input line 43.
+Package microtype Info: Applying patch `footnote' on input line 43.
+Package microtype Info: Applying patch `verbatim' on input line 43.
+LaTeX Info: Redefining \microtypesetup on input line 43.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2),
+(microtype)             factor: 1500.
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<./logo1.pdf, id=153, 284.06125pt x 80.3pt>
+File: ./logo1.pdf Graphic file (type pdf)
+<use ./logo1.pdf>
+Package pdftex.def Info: ./logo1.pdf  used on input line 46.
+(pdftex.def)             Requested size: 144.0pt x 40.70862pt.
+
+Underfull \hbox (badness 10000) detected at line 46
+[]
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <20> not available
+(Font)              size <20.74> substituted on input line 46.
+
+
+Underfull \hbox (badness 10000) detected at line 46
+[]
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 47.
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+pdfTeX warning (font expansion): font should be expanded before its first use
+LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
+
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+Underfull \hbox (badness 1968) in paragraph at lines 48--50
+\OT1/cmss/m/n/12 (+20) Vector Product reformulations of polynomial
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 48--50
+\OT1/cmss/m/n/12 (+20) multiplication and \OT1/cmtt/m/n/12 GENLUT\OT1/cmss/m/n/
+12 (+20) -assisted sampling)
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 48--50
+\OT1/cmss/m/n/12 (+20) additional post-quantum primitives that span
+ []
+
+
+Underfull \hbox (badness 3792) in paragraph at lines 48--50
+\OT1/cmss/m/n/12 (+20) lattice KEM using NTT-domain polynomial
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 48--50
+\OT1/cmss/m/n/12 (+20) arithmetic over $\U/msb/m/n/12 Z[]$\OT1/cmss/m/n/12 (+20
+) ; \OT1/cmss/bx/n/12 (+20) MAYO \OT1/cmss/m/n/12 (+20) [[]], a NIST
+ []
+
+
+Underfull \hbox (badness 3189) in paragraph at lines 48--50
+\OT1/cmss/m/n/12 (+20) evaluating dense quadratic forms over $\U/msb/m/n/12 F[]
+$\OT1/cmss/m/n/12 (+20) ;
+ []
+
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <12> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 51.
+
+Underfull \hbox (badness 3281) in paragraph at lines 51--52
+[]\OT1/cmss/m/n/12 (+20) We implement AMX-accelerated arithmetic
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 51--52
+\OT1/cmss/m/n/12 (+20) define kernel speedup as $\OML/cmm/m/it/12 S \OT1/cmr/m/
+n/12 (+20) = \OML/cmm/m/it/12 t[]=t[]$\OT1/cmss/m/n/12 (+20) ,
+ []
+
+
+Underfull \hbox (badness 2600) in paragraph at lines 51--52
+\OT1/cmss/m/n/12 (+20) ML-KEM's isolated polynomial multiplication
+ []
+
+! Undefined control sequence.
+l.53 \abstractkeywords
+                      {Apple AMX; post-quantum cryptography; matrix coproces...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <13> not available
+(Font)              size <12> substituted on input line 57.
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 59--60
+\OT1/cmss/m/n/12 (+20) critical [[]]. Modern system-on-chip (SoC)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+\OT1/cmss/m/n/12 (+20) processors contain specialized coprocessors
+ []
+
+
+Underfull \hbox (badness 2205) in paragraph at lines 59--60
+\OT1/cmss/m/n/12 (+20) --- SIMD engines, matrix accelerators, and
+ []
+
+
+Underfull \hbox (badness 3780) in paragraph at lines 61--62
+\OT1/cmss/m/n/12 (+20) matrix coprocessor known as AMX (Apple
+ []
+
+
+Underfull \hbox (badness 2951) in paragraph at lines 61--62
+\OT1/cmss/m/n/12 (+20) integer multiply-accumulate engine operating
+ []
+
+
+Underfull \hbox (badness 4805) in paragraph at lines 61--62
+\OT1/cmss/m/n/12 (+20) the polynomial multiplication bottleneck of
+ []
+
+
+pdfTeX warning (font expansion): font should be expanded before its first use
+[1
+
+
+
+ <./logo1.pdf>]
+Underfull \hbox (badness 3260) in paragraph at lines 65--66
+[]\OT1/cmss/m/n/12 (+20) This paper systematically investigates this
+ []
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 65--66
+\OT1/cmss/m/n/12 (+20) question by implementing and benchmarking
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+[]\OT1/cmss/bx/n/12 (+20) ML-KEM (FIPS 203) [[]]\OT1/cmss/m/n/12 (+20) : NTT-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+\OT1/cmss/m/n/12 (+20) based polynomial multiplication over
+ []
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 71.
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+[]\OT1/cmss/bx/n/12 (+20) Streamlined NTRU Prime [[]]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+\OT1/cmss/bx/n/12 (+20) (\OT1/cmtt/m/n/12 sntrup761\OT1/cmss/bx/n/12 (+20) )\OT
+1/cmss/m/n/12 (+20) : Polynomial multiplication
+ []
+
+<amx-register-layout.pdf, id=200, 662.475pt x 327.47343pt>
+File: amx-register-layout.pdf Graphic file (type pdf)
+<use amx-register-layout.pdf>
+Package pdftex.def Info: amx-register-layout.pdf  used on input line 94.
+(pdftex.def)             Requested size: 228.4206pt x 112.9085pt.
+
+! Package xcolor Error: Undefined color `BorderGray'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 ...idth=\linewidth]{amx-register-layout.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `LightBg'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 ...idth=\linewidth]{amx-register-layout.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 4832) in paragraph at lines 101--102
+[]\OT1/cmss/m/n/12 (+20) For Saber [[]], the authors reformulate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+\OT1/cmss/m/n/12 (+20) polynomial multiplication in the ring
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+[]\OT1/cmss/m/n/12 (+20) For FrodoKEM [[]], the workload is
+ []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+Overfull \vbox (1.60419pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[2 <./amx-register-layout.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+[]\OT1/cmss/bx/n/12 (+20) Non-lattice multivariate schemes
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 121--122
+\OT1/cmss/m/n/12 (+20) forms $\OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 (+20) = \OT1
+/cmr/bx/n/12 (+20) x[]\OML/cmm/m/it/12 P[]\OT1/cmr/bx/n/12 (+20) x$ \OT1/cmss/m
+/n/12 (+20) over $\U/msb/m/n/12 F[]$ \OT1/cmss/m/n/12 (+20) [[]], a
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 121--122
+\OT1/cmss/m/n/12 (+20) workload that is structurally similar to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+\OT1/cmss/bx/n/12 (+20) moduli (NTRU Prime). \OT1/cmtt/m/n/12 sntrup761
+ []
+
+
+Underfull \hbox (badness 5475) in paragraph at lines 125--126
+\OT1/cmss/m/n/12 (+20) deliberately uses a non-cyclotomic ring
+ []
+
+
+Underfull \hbox (badness 2351) in paragraph at lines 127--128
+[]\OT1/cmss/bx/n/12 (+20) Apple M3 characterization. \OT1/cmss/m/n/12 (+20) No 
+prior
+ []
+
+<fft-butterfly.pdf, id=385, 490.53264pt x 281.56392pt>
+File: fft-butterfly.pdf Graphic file (type pdf)
+<use fft-butterfly.pdf>
+Package pdftex.def Info: fft-butterfly.pdf  used on input line 134.
+(pdftex.def)             Requested size: 228.4206pt x 131.1106pt.
+
+! Package xcolor Error: Undefined color `BorderGray'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...ics[width=\linewidth]{fft-butterfly.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `LightBg'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...ics[width=\linewidth]{fft-butterfly.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 5832) in paragraph at lines 135--135
+[]\OT1/cmss/bx/n/12 (+20) Figure 2. \OT1/cmss/m/n/12 (+20) Comparison of $\OML/
+cmm/m/it/12 O\OT1/cmr/m/n/12 (+20) (\OML/cmm/m/it/12 n [] n\OT1/cmr/m/n/12 (+20
+) )$ \OT1/cmss/m/n/12 (+20) NTT
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 135--135
+\OT1/cmss/m/n/12 (+20) the $\OML/cmm/m/it/12 O\OT1/cmr/m/n/12 (+20) (\OML/cmm/m
+/it/12 n[]\OT1/cmr/m/n/12 (+20) )$ \OT1/cmss/m/n/12 (+20) schoolbook/TMVP matri
+x outer-
+ []
+
+
+Underfull \hbox (badness 2990) in paragraph at lines 143--144
+\OT1/cmss/m/n/12 (+20) Given that Apple AMX accelerates Saber's
+ []
+
+
+Underfull \hbox (badness 2253) in paragraph at lines 143--144
+\OT1/cmss/m/n/12 (+20) what algebraic conditions does AMX kernel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+[]\OT1/cmss/m/n/12 (+20) Does AMX's $\OML/cmm/m/it/12 O\OT1/cmr/m/n/12 (+20) (\
+OML/cmm/m/it/12 n[]\OT1/cmr/m/n/12 (+20) )$ \OT1/cmss/m/n/12 (+20) TMVP approac
+h
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 148--149
+[]\OT1/cmss/m/n/12 (+20) Can AMX accelerate the $\U/msb/m/n/12 F[]$ \OT1/cmss/m
+/n/12 (+20) polynomial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+[]\OT1/cmss/m/n/12 (+20) Can AMX accelerate the polynomial
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 149--150
+\OT1/cmss/m/n/12 (+20) multiplication kernel for NTRU Prime's
+ []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+Overfull \vbox (1.60419pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[3 <./fft-butterfly.pdf>]
+Underfull \hbox (badness 1264) in paragraph at lines 160--161
+\OT1/cmss/m/n/12 (+20) kernels for ML-KEM (all parameter sets:
+ []
+
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 166.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 166.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
+(Font)              size <5> substituted on input line 166.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 166.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 166.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+[]\OT1/cmss/bx/n/12 (+20) Benchmark dataset. \OT1/cmss/m/n/12 (+20) We report
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 170--171
+\OT1/cmss/m/n/12 (+20) measurements on Apple M3 for all four
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 180--181
+\OML/cmm/m/it/12 R[] \OT1/cmr/m/n/12 (+20) = \U/msb/m/n/12 Z[]\OT1/cmr/m/n/12 (
++20) [\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 (+20) ]\OML/cmm/m/it/12 =\OT1/cmr/m/n/1
+2 (+20) (\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 (+20) + 1)$\OT1/cmss/m/n/12 (+20)
+ . The cyclotomic
+ []
+
+
+Underfull \hbox (badness 3312) in paragraph at lines 188--189
+[]\OT1/cmss/m/n/12 (+20) MAYO [[], []] is a multivariate signature
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 196--197
+\OT1/cmss/m/n/12 (+20) It operates over $\U/msb/m/n/12 F[]\OT1/cmr/m/n/12 (+20)
+ [\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 (+20) ]\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 (+
+20) (\OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (+20) 1)$ \OT1/c
+mss/m/n/12 (+20) with $\OML/cmm/m/it/12 n \OT1/cmr/m/n/12 (+20) =
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 196--197
+\OT1/cmss/m/n/12 (+20) multiplication over $\U/msb/m/n/12 F[]$\OT1/cmss/m/n/12 
+(+20) , where all coefficient
+ []
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <11.5> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 198.
+
+LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <11.5> not available
+(Font)              size <12> substituted on input line 198.
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+Overfull \vbox (1.60419pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[4]
+<methodology-blocks.pdf, id=506, 767.86874pt x 188.20313pt>
+File: methodology-blocks.pdf Graphic file (type pdf)
+<use methodology-blocks.pdf>
+Package pdftex.def Info: methodology-blocks.pdf  used on input line 211.
+(pdftex.def)             Requested size: 228.4206pt x 55.98465pt.
+
+
+! Package xcolor Error: Undefined color `BorderGray'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 ...idth=\linewidth]{methodology-blocks.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `LightBg'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 ...idth=\linewidth]{methodology-blocks.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 5403) in paragraph at lines 212--212
+[]\OT1/cmss/bx/n/12 (+20) Figure 3. \OT1/cmss/m/n/12 (+20) Four-stage methodolo
+gy pipeline:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
+\OT1/cmss/m/n/12 (+20) baseline acquisition, AMX reformulation,
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 212--212
+\OT1/cmss/m/n/12 (+20) integration, and benchmarking with iterative
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+\OT1/cmss/m/n/12 (+20) reference C and optimized ARM NEON
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 216--217
+\OT1/cmss/m/n/12 (+20) implementations. For ML-KEM, we use the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+[]\OT1/cmss/m/n/12 (+20) HQC: Integer-encoded $\U/msb/m/n/12 F[]$ \OT1/cmss/m/n
+/12 (+20) polynomial
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 223--224
+[]\OT1/cmss/m/n/12 (+20) NTRU Prime: TMVP with bounded Z-
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 228--229
+[]\OT1/cmss/bx/n/12 (+20) Stage 4: Benchmarking. \OT1/cmss/m/n/12 (+20) We meas
+ure
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
+\OT1/cmss/m/n/12 (+20) cycle counts via \OT1/cmtt/m/n/12 kperf \OT1/cmss/m/n/12
+ (+20) performance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
+\OT1/cmss/m/n/12 (+20) counters for ML-KEM full-operation
+ []
+
+
+Underfull \hbox (badness 6348) in paragraph at lines 228--229
+\OT1/cmss/m/n/12 (+20) benchmarks, and (b) wall-clock time via
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
+\OT1/cmtt/m/n/12 std::chrono::high[]resolution[]clock \OT1/cmss/m/n/12 (+20) fo
+r
+ []
+
+
+Underfull \hbox (badness 7397) in paragraph at lines 228--229
+\OT1/cmss/m/n/12 (+20) isolated kernel benchmarks (MAYO, HQC,
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 228--229
+\OT1/cmss/m/n/12 (+20) to performance cores. The M3 performance
+ []
+
+
+Underfull \hbox (badness 5607) in paragraph at lines 228--229
+\OT1/cmss/m/n/12 (+20) cores operate at a nominal frequency of
+ []
+
+
+Underfull \hbox (badness 4846) in paragraph at lines 228--229
+\OT1/cmss/m/n/12 (+20) 4.05 GHz; cycle-to-microsecond conversions
+ []
+
+LaTeX Font Info:    Calculating math sizes for size <11.5> on input line 241.
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <11.5> not available
+(Font)              size <12> substituted on input line 241.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <11.5> not available
+(Font)              size <12> substituted on input line 241.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <11.5> not available
+(Font)              size <12> substituted on input line 241.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 241.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 241.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 241.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+[]\OT1/cmss/m/n/12 (+20) Use AMX \OT1/cmtt/m/n/12 GENLUT \OT1/cmss/m/n/12 (+20)
+ to perform $\U/msb/m/n/12 F[]$
+ []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+Overfull \vbox (1.60419pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[5 <./methodology-blocks.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 253.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 253.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 253.
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 257--258
+\OT1/cmss/m/n/12 (+20) throughput by a factor of 16 compared to
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 257--258
+\OT1/cmss/m/n/12 (+20) NEON's \OT1/cmtt/m/n/12 PMULL \OT1/cmss/m/n/12 (+20) [[]
+], which operates on 64
+ []
+
+
+Underfull \hbox (badness 4765) in paragraph at lines 269--270
+\OT1/cmss/m/n/12 (+20) in [[]]) uses \OT1/cmtt/m/n/12 MAC16 \OT1/cmss/m/n/12 (+
+20) in vector mode with
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 276--277
+\OT1/cmss/m/n/12 (+20) All measurements were taken on Apple M3
+ []
+
+
+Underfull \hbox (badness 1881) in paragraph at lines 276--277
+\OT1/cmss/m/n/12 (+20) (MacBook Air, 8-core, macOS Sequoia 15,
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 280--281
+[]\OT1/cmss/m/n/12 (+20) Table []1[] reports cycle counts for ML-KEM
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 280--281
+\OT1/cmss/m/n/12 (+20) full KEM operations and isolated polynomial
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 280--281
+\OT1/cmss/m/n/12 (+20) (corresponding to $\OT1/cmr/m/n/12 (+20) 31$\OT1/cmss/m/
+n/12 (+20) --$\OT1/cmr/m/n/12 (+20) 86\OMS/cmsy/m/n/12 ^^B$ \OT1/cmss/m/n/12 (+
+20) slowdowns), with
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 284--284
+[]\OT1/cmss/bx/n/12 (+20) Table 1. \OT1/cmss/m/n/12 (+20) ML-KEM cycle counts a
+nd kernel
+ []
+
+
+Overfull \hbox (78.13971pt too wide) in paragraph at lines 287--307
+ [][] 
+ []
+
+<fig-mlkem-cycles.pdf, id=582, 604.40686pt x 315.32996pt>
+File: fig-mlkem-cycles.pdf Graphic file (type pdf)
+<use fig-mlkem-cycles.pdf>
+Package pdftex.def Info: fig-mlkem-cycles.pdf  used on input line 311.
+(pdftex.def)             Requested size: 228.4206pt x 119.17226pt.
+
+! Package xcolor Error: Undefined color `BorderGray'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.311 ...[width=\linewidth]{fig-mlkem-cycles.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `LightBg'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.311 ...[width=\linewidth]{fig-mlkem-cycles.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+Overfull \vbox (1.60419pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[6]
+Overfull \hbox (32.93828pt too wide) in paragraph at lines 326--336
+ [][] 
+ []
+
+<fig-mayo-speedup.pdf, id=596, 553.9308pt x 308.26768pt>
+File: fig-mayo-speedup.pdf Graphic file (type pdf)
+<use fig-mayo-speedup.pdf>
+Package pdftex.def Info: fig-mayo-speedup.pdf  used on input line 340.
+(pdftex.def)             Requested size: 228.4206pt x 127.11964pt.
+
+! Package xcolor Error: Undefined color `BorderGray'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.340 ...[width=\linewidth]{fig-mayo-speedup.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `LightBg'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.340 ...[width=\linewidth]{fig-mayo-speedup.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 341--341
+[]\OT1/cmss/bx/n/12 (+20) Figure 5. \OT1/cmss/m/n/12 (+20) MAYO: Kernel speedup
+ $\OML/cmm/m/it/12 S \OT1/cmr/m/n/12 (+20) =
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 348--349
+\OT1/cmss/m/n/12 (+20) times for HQC-128 ($\OML/cmm/m/it/12 n \OT1/cmr/m/n/12 (
++20) = 17[]669$ \OT1/cmss/m/n/12 (+20) over $\U/msb/m/n/12 F[]$\OT1/cmss/m/n/12
+ (+20) ).
+ []
+
+
+Underfull \hbox (badness 1762) in paragraph at lines 352--352
+[]\OT1/cmss/bx/n/12 (+20) Table 3. \OT1/cmss/m/n/12 (+20) HQC-128 polynomial mu
+ltiplication
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--352
+\OT1/cmss/m/n/12 (+20) kernel latency ($\OML/cmm/m/it/12 ^^V$\OT1/cmss/m/n/12 (
++20) s) on Apple M3 over
+ []
+
+
+Overfull \hbox (86.8282pt too wide) in paragraph at lines 355--363
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--372
+\OT1/cmss/m/n/12 (+20) kernel latency ($\OML/cmm/m/it/12 ^^V$\OT1/cmss/m/n/12 (
++20) s) on Apple M3 over
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 372--372
+\U/msb/m/n/12 Z[]\OT1/cmr/m/n/12 (+20) [\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 (+20)
+ ]\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 (+20) (\OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/1
+2 ^^@ \OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (+20) 1)$\OT1/cms
+s/m/n/12 (+20) . Ternary input has
+ []
+
+
+Overfull \hbox (77.39908pt too wide) in paragraph at lines 375--383
+ [][] 
+ []
+
+<fig-crossscheme-speedup.pdf, id=601, 583.27727pt x 349.88354pt>
+File: fig-crossscheme-speedup.pdf Graphic file (type pdf)
+<use fig-crossscheme-speedup.pdf>
+Package pdftex.def Info: fig-crossscheme-speedup.pdf  used on input line 391.
+(pdftex.def)             Requested size: 228.4206pt x 137.01993pt.
+
+! Package xcolor Error: Undefined color `BorderGray'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.391 ...\linewidth]{fig-crossscheme-speedup.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `LightBg'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.391 ...\linewidth]{fig-crossscheme-speedup.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 403--404
+\OT1/cmss/m/n/12 (+20) Saber/FrodoKEM findings [[]], suggest the
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 403--404
+\OT1/cmss/m/n/12 (+20) following empirical heuristic for AMX kernel
+ []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+Overfull \vbox (1.60419pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[7 <./fig-mlkem-cycles.pdf> <./fig-mayo-speedup.pdf>]
+Overfull \hbox (84.82523pt too wide) in paragraph at lines 416--428
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 438--439
+\OT1/cmss/m/n/12 (+20) due to AMX being slower than NEON for
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 438--439
+\OT1/cmss/m/n/12 (+20) polynomial multiplication. The root cause is
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 438--439
+\OT1/cmss/m/sl/12 (+20) algorithmic\OT1/cmss/m/n/12 (+20) : ML-KEM uses NTT-dom
+ain key
+ []
+
+
+Overfull \hbox (54.18451pt too wide) detected at line 443
+[] \OT1/cmr/m/n/12 = [] = [] \OMS/cmsy/m/n/12 ^^Y \OT1/cmr/m/n/12 75\OML/cmm/m/
+it/12 :\OT1/cmr/m/n/12 3 \OMS/cmsy/m/n/12 ^^B  \OT1/cmr/m/n/12 ([])\OML/cmm/m/i
+t/12 :
+ []
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 445--446
+\OT1/cmss/m/n/12 (+20) slowdown ranges from $\OT1/cmr/m/n/12 (+20) 30\OML/cmm/m
+/it/12 :\OT1/cmr/m/n/12 (+20) 7\OMS/cmsy/m/n/12 ^^B$ \OT1/cmss/m/n/12 (+20) (ML
+-KEM-512
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 445--446
+\OT1/cmss/m/n/12 (+20) KeyGen) to $\OT1/cmr/m/n/12 (+20) 64\OML/cmm/m/it/12 :\O
+T1/cmr/m/n/12 (+20) 6\OMS/cmsy/m/n/12 ^^B$ \OT1/cmss/m/n/12 (+20) (ML-KEM-1024 
+Encaps).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
+\OT1/cmss/m/n/12 (+20) multiplication, i.e., approximately $\OT1/cmr/m/n/12 (+2
+0) 1[]562\OMS/cmsy/m/n/12 ^^B$
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 449--450
+\OT1/cmss/m/n/12 (+20) slowdown) represents the most extreme case
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 449--450
+\OT1/cmss/m/n/12 (+20) of AMX unsuitability. The root cause is a
+ []
+
+
+Underfull \hbox (badness 6592) in paragraph at lines 453--454
+\OT1/cmss/m/n/12 (+20) AMX \OT1/cmtt/m/n/12 mac16 \OT1/cmss/m/n/12 (+20) perfor
+ms carry-propagating
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 461--462
+\OT1/cmss/m/n/12 (+20) more effectively, but we have not measured
+ []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+Overfull \vbox (1.60419pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[8 <./fig-crossscheme-speedup.pdf>]
+<fig-mayo-trend.pdf, id=801, 438.70901pt x 265.25136pt>
+File: fig-mayo-trend.pdf Graphic file (type pdf)
+<use fig-mayo-trend.pdf>
+Package pdftex.def Info: fig-mayo-trend.pdf  used on input line 465.
+(pdftex.def)             Requested size: 228.4206pt x 138.10553pt.
+
+
+! Package xcolor Error: Undefined color `BorderGray'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.465 ...cs[width=\linewidth]{fig-mayo-trend.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `LightBg'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.465 ...cs[width=\linewidth]{fig-mayo-trend.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 5274) in paragraph at lines 492--492
+[]\OT1/cmss/bx/n/12 (+20) Table 6. \OT1/cmss/m/n/12 (+20) AMX suitability surve
+y of PQC
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 492--492
+\OT1/cmss/m/n/12 (+20) candidates beyond the four studied schemes.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 492--492
+\OT1/cmss/m/n/12 (+20) Ratings: \OT1/cmss/bx/n/12 (+20) High \OT1/cmss/m/n/12 (
++20) = structurally similar to
+ []
+
+
+Underfull \hbox (badness 4193) in paragraph at lines 492--492
+\OT1/cmss/m/n/12 (+20) Saber/MAYO; \OT1/cmss/bx/n/12 (+20) Moderate \OT1/cmss/m
+/n/12 (+20) = partial match;
+ []
+
+
+Overfull \hbox (42.27617pt too wide) in paragraph at lines 495--513
+ [][] 
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 515--516
+\OT1/cmss/m/n/12 (+20) matrix multiplication), PERK (matrix-vector
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 522--523
+\OT1/cmss/m/n/12 (+20) reference for AMX instruction encoding and
+ []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+Overfull \vbox (1.60419pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[9 <./fig-mayo-trend.pdf>]
+Underfull \hbox (badness 1960) in paragraph at lines 524--525
+\OT1/cmss/m/n/12 (+20) M-series using NEON NTT [[], []]. These
+ []
+
+
+Underfull \hbox (badness 1910) in paragraph at lines 524--525
+\OT1/cmss/m/n/12 (+20) implementations exploit the $\OML/cmm/m/it/12 O\OT1/cmr/
+m/n/12 (+20) (\OML/cmm/m/it/12 n [] n\OT1/cmr/m/n/12 (+20) )$ \OT1/cmss/m/n/12 
+(+20) NTT
+ []
+
+
+Underfull \hbox (badness 3088) in paragraph at lines 524--525
+\OT1/cmss/m/n/12 (+20) structure with vectorized Cooley--Tukey and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
+[]\OT1/cmss/bx/n/12 (+20) HQC implementations. \OT1/cmss/m/n/12 (+20) The HQC
+ []
+
+
+Underfull \hbox (badness 6204) in paragraph at lines 528--529
+\OT1/cmss/m/n/12 (+20) specification [[]] provides reference C and
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 528--529
+\OT1/cmss/m/n/12 (+20) AVX2 implementations. ARM NEON \OT1/cmtt/m/n/12 PMULL\OT
+1/cmss/m/n/12 (+20) -
+ []
+
+
+Underfull \hbox (badness 2608) in paragraph at lines 530--531
+\OT1/cmss/m/n/12 (+20) competitive performance on some platforms.
+ []
+
+
+Underfull \hbox (badness 7344) in paragraph at lines 530--531
+\OT1/cmss/m/n/12 (+20) However, the non-cyclotomic structure of
+ []
+
+
+Underfull \hbox (badness 3826) in paragraph at lines 532--533
+[]\OT1/cmss/bx/n/12 (+20) Subquadratic polynomial multiplication.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--544
+[]\OT1/cmss/bx/n/12 (+20) Undocumented hardware. \OT1/cmss/m/n/12 (+20) AMX is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--544
+\OT1/cmss/m/n/12 (+20) not officially documented by Apple.
+ []
+
+
+Underfull \hbox (badness 2213) in paragraph at lines 544--545
+\OT1/cmss/m/n/12 (+20) multiplication. Karatsuba or Toom--Cook
+ []
+
+
+Underfull \hbox (badness 1924) in paragraph at lines 544--545
+\OT1/cmss/m/n/12 (+20) NEON baselines, potentially reducing or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
+[]\OT1/cmss/bx/n/12 (+20) Subroutine-level measurement. \OT1/cmss/m/n/12 (+20) 
+We
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
+\OT1/cmss/m/n/12 (+20) benchmark isolated arithmetic kernels
+ []
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 545--546
+\OT1/cmss/m/n/12 (+20) ternary) represent upper bounds on the
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 548--549
+[]\OT1/cmss/bx/n/12 (+20) Timing side channels. \OT1/cmss/m/n/12 (+20) We have 
+not
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 549--550
+\OT1/cmss/m/n/12 (+20) benchmarks use the Round 2 parameter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--558
+\OT1/cmss/m/n/12 (+20) This paper systematically evaluated the
+ []
+
+
+Underfull \hbox (badness 2884) in paragraph at lines 557--558
+\OT1/cmss/m/n/12 (+20) feasibility of Apple AMX matrix-coprocessor
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 557--558
+\OT1/cmss/m/n/12 (+20) kernel acceleration across four post-quantum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--558
+\OT1/cmss/m/n/12 (+20) cryptographic schemes spanning lattice,
+ []
+
+
+Underfull \hbox (badness 1728) in paragraph at lines 559--560
+[]\OT1/cmss/m/n/12 (+20) Our key finding is an empirical \OT1/cmss/m/sl/12 (+20
+) suitability
+ []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+Overfull \vbox (1.60419pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
+[]\OT1/cmss/m/n/12 (+20) We also contribute two novel AMX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
+\OT1/cmss/m/n/12 (+20) implementation techniques: \OT1/cmss/m/sl/12 (+20) bound
+ed Z-
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 561--562
+\OT1/cmss/m/sl/12 (+20) invariant \OT1/cmss/m/n/12 (+20) (\OT1/cmtt/m/n/12 X[]R
+EG(0) \OT1/cmss/m/n/12 (+20) and \OT1/cmtt/m/n/12 Y[]REG(0) \OT1/cmss/m/n/12 (+
+20) must be
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 576--581
+\OT1/cmss/m/n/12 (+20) Ch^^Savez-Saab, J., and L^^Sopez, J., ``PQC-
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 576--581
+\OT1/cmss/m/n/12 (+20) AMX: Accelerating Saber and FrodoKEM
+ []
+
+
+Underfull \hbox (badness 5050) in paragraph at lines 583--586
+[]\OT1/cmss/m/n/12 (+20) Johnson, D., ``Apple AMX instruction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--586
+\OT1/cmss/m/n/12 (+20) set,'' []$\OT1/cmtt/m/n/12 https : / / github . com / do
+ugallj /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--597
+\OT1/cmss/m/n/12 (+20) Document, Round 2 Version,'' NIST
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--597
+\OT1/cmtt/m/n/12 / / csrc . nist . gov / csrc / media / Projects /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--597
+\OT1/cmtt/m/n/12 pqc-[]dig-[]sig / documents / round-[]2 /
+ []
+
+
+Underfull \hbox (badness 4543) in paragraph at lines 599--602
+[]\OT1/cmss/m/n/12 (+20) Beullens, W., ``MAYO: Practical Post-
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 599--602
+\OT1/cmss/m/n/12 (+20) Quantum Signatures from Oil-and-Vinegar
+ []
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 609--614
+\OT1/cmss/m/n/12 (+20) Reducing Attack Surface at Low Cost,''
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 609--614
+\OT1/cmss/m/n/12 (+20) IACR ePrint 2016/461. []$\OT1/cmtt/m/n/12 https : / / ep
+rint .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 616--620
+[]\OT1/cmss/m/n/12 (+20) National Institute of Standards and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 616--620
+\OT1/cmss/m/n/12 (+20) Technology, ``Module-Lattice-Based Key-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 616--620
+\OT1/cmss/m/n/12 (+20) Encapsulation Mechanism Standard,''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 616--620
+\OT1/cmss/m/n/12 (+20) FIPS 203, August 2024. []$\OT1/cmtt/m/n/12 https :
+ []
+
+
+Underfull \hbox (badness 3623) in paragraph at lines 622--625
+[]\OT1/cmss/m/n/12 (+20) Botros, L., Kannwischer, M. J., and
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 622--625
+\OT1/cmss/m/n/12 (+20) implementation of Kyber on Cortex-M4,''
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 627--630
+\OT1/cmss/m/n/12 (+20) A72 and Apple M1,'' \OT1/cmss/m/sl/12 (+20) IACR Transac
+tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 632--635
+[]\OT1/cmss/m/n/12 (+20) National Institute of Standards and
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 632--635
+\OT1/cmss/m/n/12 (+20) Technology, ``Post-Quantum Cryptography
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 637--641
+\OT1/cmss/m/n/12 (+20) ``Status Report on the Second Round of
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 637--641
+\OT1/cmss/m/n/12 (+20) the Additional Digital Signature Schemes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 643--647
+[]\OT1/cmss/m/n/12 (+20) National Institute of Standards and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 643--647
+\OT1/cmss/m/n/12 (+20) Technology, ``NIST Selects HQC as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 643--647
+\OT1/cmss/m/n/12 (+20) Fifth Algorithm for Post-Quantum
+ []
+
+
+Underfull \hbox (badness 2020) in paragraph at lines 643--647
+\OT1/cmss/m/n/12 (+20) Encryption,'' March 2025. []$\OT1/cmtt/m/n/12 https : / 
+/ www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 643--647
+\OT1/cmtt/m/n/12 nist . gov / news-[]events / news / 2025 / 03 /
+ []
+
+
+Overfull \hbox (124.84167pt too wide) in paragraph at lines 643--647
+\OT1/cmtt/m/n/12 nist-[]selects-[]hqc-[]fifth-[]algorithm-[]post-[]quantum-[]en
+cryption$[] 
+ []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+Overfull \vbox (1.60419pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[11]
+Underfull \hbox (badness 3108) in paragraph at lines 649--652
+\OT1/cmss/m/n/12 (+20) F., Banerjee, I., and Cammarota, R.,
+ []
+
+
+Underfull \hbox (badness 4779) in paragraph at lines 659--662
+[]\OT1/cmss/m/n/12 (+20) Kipnis, A., Patarin, J., and Goubin,
+ []
+
+
+Underfull \hbox (badness 2828) in paragraph at lines 664--667
+[]\OT1/cmss/m/n/12 (+20) Arm Ltd., ``Arm Architecture Reference
+ []
+
+
+Underfull \hbox (badness 1303) in paragraph at lines 679--684
+\OT1/cmss/m/n/12 (+20) NTRU on Cortex-M4 and AVX2,'' \OT1/cmss/m/sl/12 (+20) IA
+CR
+ []
+
+
+Underfull \hbox (badness 4120) in paragraph at lines 692--695
+\OT1/cmss/m/n/12 (+20) Ver^^?anderlichen,'' \OT1/cmss/m/sl/12 (+20) Mathematisc
+he Annalen\OT1/cmss/m/n/12 (+20) ,
+ []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+Overfull \vbox (1.60419pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[12
+
+] (./paper.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.0pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package rerunfilecheck Info: File `paper.out' has not changed.
+(rerunfilecheck)             Checksum: 3805A78B114DA96D7DEB44F9F8B99148;6681.
+ ) 
+Here is how much of TeX's memory you used:
+ 15074 strings out of 469006
+ 239216 string characters out of 5454813
+ 691513 words of memory out of 5000000
+ 43226 multiletter control sequences out of 15000+600000
+ 652936 words of font info for 221 fonts, out of 8000000 for 9000
+ 323 hyphenation exceptions out of 8191
+ 73i,12n,98p,1224b,627s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
+2.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx8.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi5.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2026basic/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026basic/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026basic/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2026basic/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2026basic/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2026basic/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2026bas
+ic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2
+026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texl
+ive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/loc
+al/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr
+/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><
+/usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
+m10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb>
+Output written on paper.pdf (13 pages, 550880 bytes).
+PDF statistics:
+ 1076 PDF objects out of 1200 (max. 8388607)
+ 643 compressed objects within 7 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 56649 words of extra memory for PDF output out of 61914 (max. 10000000)
+

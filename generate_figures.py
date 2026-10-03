@@ -69,10 +69,13 @@ def rounded_bars(ax, positions, heights, width=0.35, color=BLUE, label=None, rad
 def save_figure(fig, base_name):
     """Save figure in both project directory and desktop folder in SVG, PDF, and PNG."""
     for out_dir in [OUT_PROJECT, OUT_DESKTOP]:
-        os.makedirs(out_dir, exist_ok=True)
-        fig.savefig(os.path.join(out_dir, f'{base_name}.svg'), format='svg', bbox_inches='tight')
-        fig.savefig(os.path.join(out_dir, f'{base_name}.pdf'), format='pdf', bbox_inches='tight')
-        fig.savefig(os.path.join(out_dir, f'{base_name}.png'), format='png', dpi=300, bbox_inches='tight')
+        try:
+            os.makedirs(out_dir, exist_ok=True)
+            fig.savefig(os.path.join(out_dir, f'{base_name}.svg'), format='svg', bbox_inches='tight')
+            fig.savefig(os.path.join(out_dir, f'{base_name}.pdf'), format='pdf', bbox_inches='tight')
+            fig.savefig(os.path.join(out_dir, f'{base_name}.png'), format='png', dpi=300, bbox_inches='tight')
+        except OSError:
+            pass
     plt.close(fig)
     print(f'  ✓ {base_name} (svg, pdf, png)')
 
@@ -80,65 +83,11 @@ def save_figure(fig, base_name):
 # ═══════════════════════════════════════════════════════════════
 # FIGURE 1: AMX Register Layout & mac16 Outer Product
 # ═══════════════════════════════════════════════════════════════
+from build_publication_figures import generate_amx_register_layout_svg, generate_methodology_blocks_svg, render_formats
+
 def fig_amx_registers():
-    fig, ax = plt.subplots(figsize=(8.5, 5.0))
-    ax.set_xlim(0, 10)
-    ax.set_ylim(0, 6)
-    ax.axis('off')
-
-    # Title
-    ax.text(5.0, 5.7, 'Apple AMX Matrix Coprocessor: Register File & Outer Product',
-            ha='center', va='center', fontsize=13, fontweight='bold', color=DARK)
-
-    # X Registers (left)
-    box_x = FancyBboxPatch((0.6, 1.2), 2.2, 3.8, boxstyle="round,pad=0.1,rounding_size=0.15",
-                           facecolor=LBLUE, edgecolor=DBLUE, linewidth=1.5)
-    ax.add_patch(box_x)
-    ax.text(1.7, 4.7, 'X Register File', ha='center', va='center', fontsize=11, fontweight='bold', color=DBLUE)
-    ax.text(1.7, 4.35, '8 × 64 bytes (X0 – X7)', ha='center', va='center', fontsize=9, color=DGREY)
-    for k in range(8):
-        y_pos = 3.9 - k * 0.34
-        row = FancyBboxPatch((0.8, y_pos - 0.12), 1.8, 0.25, boxstyle="round,pad=0.03,rounding_size=0.05",
-                             facecolor=WHITE, edgecolor='#B0C4DE', linewidth=1)
-        ax.add_patch(row)
-        ax.text(1.7, y_pos, f'X{k}: 32 × int16 lanes', ha='center', va='center', fontsize=8, color=DARK)
-
-    # Y Registers (top middle)
-    box_y = FancyBboxPatch((3.5, 4.2), 3.4, 1.1, boxstyle="round,pad=0.1,rounding_size=0.15",
-                           facecolor=LPINK, edgecolor=DPINK, linewidth=1.5)
-    ax.add_patch(box_y)
-    ax.text(5.2, 5.0, 'Y Register File: 8 × 64 bytes (Y0 – Y7)', ha='center', va='center',
-            fontsize=10.5, fontweight='bold', color=DPINK)
-    ax.text(5.2, 4.55, 'Vector of 32 × 16-bit integer coefficients', ha='center', va='center',
-            fontsize=8.5, color=DGREY)
-
-    # Z Register (bottom right) - 64x64 byte accumulator
-    box_z = FancyBboxPatch((3.8, 0.6), 5.6, 3.2, boxstyle="round,pad=0.1,rounding_size=0.15",
-                           facecolor=LPURPLE, edgecolor=DPURPLE, linewidth=1.5)
-    ax.add_patch(box_z)
-    ax.text(6.6, 3.5, 'Z Register File: 4 KB Matrix Accumulator', ha='center', va='center',
-            fontsize=11, fontweight='bold', color=DPURPLE)
-    ax.text(6.6, 3.15, '64 rows × 64 bytes (stores 32 × 32 matrix of 16-bit integers)',
-            ha='center', va='center', fontsize=9, color=DGREY)
-
-    # Grid visual inside Z
-    grid_box = FancyBboxPatch((4.4, 0.9), 4.4, 1.9, boxstyle="round,pad=0.05,rounding_size=0.08",
-                              facecolor=WHITE, edgecolor='#C8B6E2', linewidth=1)
-    ax.add_patch(grid_box)
-    ax.text(6.6, 2.0, 'Z[r][c] += X[r] × Y[c]', ha='center', va='center',
-            fontsize=12, fontweight='bold', color=DPURPLE)
-    ax.text(6.6, 1.45, 'Hardware 32 × 32 outer-product primitive\n(1,024 multiply-accumulates / mac16 instruction)',
-            ha='center', va='center', fontsize=8.5, color=DARK)
-
-    # Arrows connecting X, Y -> Z
-    arrow_x = FancyArrowPatch((2.9, 2.5), (3.7, 2.2), arrowstyle='->', mutation_scale=18,
-                              color=DBLUE, linewidth=2.0)
-    ax.add_patch(arrow_x)
-    arrow_y = FancyArrowPatch((5.2, 4.1), (5.5, 3.9), arrowstyle='->', mutation_scale=18,
-                              color=DPINK, linewidth=2.0)
-    ax.add_patch(arrow_y)
-
-    save_figure(fig, 'amx-register-layout')
+    svg = generate_amx_register_layout_svg()
+    render_formats(svg, 'amx-register-layout')
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -212,48 +161,8 @@ def fig_ntt_butterfly():
 # FIGURE 3: Methodology Pipeline Flowchart
 # ═══════════════════════════════════════════════════════════════
 def fig_methodology():
-    fig, ax = plt.subplots(figsize=(9.5, 4.0))
-    ax.set_xlim(0, 10)
-    ax.set_ylim(0, 4.2)
-    ax.axis('off')
-
-    stages = [
-        ('Stage 1\nBaseline\nAcquisition', '• Reference C\n• Optimized NEON\n• Baseline timings', LBLUE, DBLUE),
-        ('Stage 2\nAMX\nReformulation', '• TMVP mapping\n• GENLUT lookups\n• Bounded Z-accum', LPINK, DPINK),
-        ('Stage 3\nIntegration &\nVerification', '• Test harnesses\n• Parameter sets\n• Commutativity\n• Cross-validation', LPURPLE, DPURPLE),
-        ('Stage 4\nBenchmarking\n& Analysis', '• kperf CPU cycles\n• Steady microsecs\n• Speedup ratio S\n• Suitability model', '#D9F0D3', '#1B7837'),
-    ]
-
-    box_w = 1.95
-    box_h = 2.6
-    y_pos = 1.0
-
-    for i, (title, content, bg_col, border_col) in enumerate(stages):
-        x_pos = 0.5 + i * 2.4
-        box = FancyBboxPatch((x_pos, y_pos), box_w, box_h, boxstyle="round,pad=0.08,rounding_size=0.12",
-                             facecolor=bg_col, edgecolor=border_col, linewidth=1.5)
-        ax.add_patch(box)
-        ax.text(x_pos + box_w/2, y_pos + box_h - 0.45, title, ha='center', va='center',
-                fontsize=9.5, fontweight='bold', color=border_col)
-        ax.text(x_pos + box_w/2, y_pos + box_h/2 - 0.3, content, ha='center', va='center',
-                fontsize=8, color=DARK)
-
-        # Forward arrow to next stage
-        if i < 3:
-            arrow = FancyArrowPatch((x_pos + box_w + 0.05, y_pos + box_h/2),
-                                    (x_pos + box_w + 0.40, y_pos + box_h/2),
-                                    arrowstyle='->', mutation_scale=16, color=DARK, linewidth=1.8)
-            ax.add_patch(arrow)
-
-    # Iterative feedback loop from Stage 4 back to Stage 2
-    feedback = FancyArrowPatch((8.7, y_pos + box_h + 0.05), (3.9, y_pos + box_h + 0.05),
-                               arrowstyle='->', connectionstyle='arc3,rad=-0.25',
-                               mutation_scale=16, color='#E65100', linewidth=1.8, linestyle='--')
-    ax.add_patch(feedback)
-    ax.text(6.3, 3.95, 'Iterative Feedback & Register Optimization (Stage 4 -> Stage 2)',
-            ha='center', va='center', fontsize=8.5, fontweight='bold', color='#E65100')
-
-    save_figure(fig, 'methodology-blocks')
+    svg = generate_methodology_blocks_svg()
+    render_formats(svg, 'methodology-blocks')
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -299,12 +208,23 @@ def fig_mlkem():
             ax.text(pair_center, 1800, op, ha='center', va='bottom',
                     fontsize=7.5, color=DGREY, fontstyle='italic')
 
+            # Grayscaled approximate values on top of bars
+            vn = neon[p][j]
+            str_n = f"{vn/1e3:.1f}k"
+            va = amx[p][j]
+            str_a = f"{va/1e6:.2f}M" if va >= 1e6 else f"{va/1e3:.0f}k"
+
+            ax.text(xn, vn * 1.15, str_n, ha='center', va='bottom',
+                    fontsize=6.5, color=DGREY, fontweight='normal')
+            ax.text(xa, va * 1.15, str_a, ha='center', va='bottom',
+                    fontsize=6.5, color=DGREY, fontweight='normal')
+
     ax.set_yscale('log')
     ax.set_xticks(x_group_centers)
     ax.set_xticklabels(params)
     ax.set_ylabel('Cycle count (log scale)')
     ax.set_title('ML-KEM: NEON NTT vs AMX TMVP Cycle Counts on Apple M3')
-    ax.set_ylim(1e3, 5e6)
+    ax.set_ylim(1e3, 6.5e6)
     ax.set_xlim(
         x_group_centers[0] - pair_spacing - bar_w * 2,
         x_group_centers[-1] + pair_spacing + bar_w * 2
@@ -430,25 +350,34 @@ def fig_crossscheme():
 # FIGURE 7: MAYO speedup vs matrix dimension (line plot)
 # ═══════════════════════════════════════════════════════════════
 def fig_mayo_trend():
-    fig, ax = plt.subplots(figsize=(5.8, 3.8))
+    fig, ax = plt.subplots(figsize=(6.2, 3.8))
 
-    dims = [64*66, 64*78, 96*99, 128*133]
+    labels = ['MAYO-1\n(64×66)', 'MAYO-2\n(64×78)', 'MAYO-3\n(96×99)', 'MAYO-5\n(128×133)']
     speedups = [1.47, 1.53, 1.60, 1.69]
-    dim_labels = ['64×66', '64×78', '96×99', '128×133']
+    x = np.arange(len(labels))
 
-    ax.plot(dims, speedups, 'o-', color=DPURPLE, linewidth=2.5, markersize=10,
-            markerfacecolor=PURPLE, markeredgecolor=DPURPLE, markeredgewidth=1.5)
+    # Glow line + clean marker trend
+    ax.plot(x, speedups, '-', color='#DDD6FE', linewidth=5, zorder=2, alpha=0.7)
+    ax.plot(x, speedups, 'o-', color=DPURPLE, linewidth=2.4, markersize=8.5,
+            markerfacecolor='#EDE9FE', markeredgecolor=DPURPLE, markeredgewidth=2.0, zorder=3)
 
-    for d, s, lbl in zip(dims, speedups, dim_labels):
-        ax.annotate(f'{s:.2f}×\n({lbl})', (d, s), textcoords='offset points',
-                    xytext=(0, 14), ha='center', fontsize=9, fontweight='bold')
+    for xi, s in zip(x, speedups):
+        ax.annotate(f'{s:.2f}×', (xi, s), textcoords='offset points',
+                    xytext=(0, 11), ha='center', va='bottom',
+                    fontsize=9.5, fontweight='bold', color=DPURPLE,
+                    bbox=dict(boxstyle='round,pad=0.22,rounding_size=0.3',
+                              facecolor='#F5F3FF', edgecolor='#DDD6FE', lw=1.2, zorder=4))
 
-    ax.axhline(y=1.0, color=DPINK, linestyle='--', linewidth=1.5, alpha=0.6, label='Break-even (S = 1.0×)')
-    ax.set_xlabel('Matrix dimension product (m × n)')
-    ax.set_ylabel('Speedup S = t_NEON / t_AMX')
-    ax.set_title('MAYO: Speedup Scales with Matrix Size on Apple M3')
-    ax.set_ylim(0.8, 2.0)
-    ax.legend(loc='lower right', framealpha=0.9)
+    ax.axhline(y=1.0, color='#EF4444', linestyle='--', linewidth=1.5, alpha=0.75,
+               label='Break-even (S = 1.0×)', zorder=1)
+    ax.set_xticks(x)
+    ax.set_xticklabels(labels, fontweight='medium', color=DARK)
+    ax.set_xlabel('MAYO Parameter Set (Matrix Dimension m × n)', fontweight='bold', color=DARK, labelpad=8)
+    ax.set_ylabel('Speedup S = t_NEON / t_AMX', fontweight='bold', color=DARK, labelpad=8)
+    ax.set_title('MAYO: Speedup Scales with Matrix Size', fontweight='bold', fontsize=11.5, color=DARK, pad=12)
+    ax.set_ylim(0.9, 1.88)
+    ax.set_xlim(-0.45, len(labels) - 0.55)
+    ax.legend(loc='lower right', framealpha=0.95, facecolor=WHITE, edgecolor='#E2E8F0', fontsize=9.5)
 
     fig.tight_layout()
     save_figure(fig, 'fig-mayo-trend')
@@ -543,7 +472,7 @@ def fig_hqc():
     ax.set_xticklabels(ops)
     ax.set_ylabel('Kernel latency, µs (log scale)')
     ax.set_title('HQC-128: NEON PMULL vs AMX Kernel Latency on Apple M3')
-    ax.set_ylim(2, 5e5)
+    ax.set_ylim(2, 2.5e6)
     ax.set_xlim(x[0] - 0.55, x[-1] + 0.55)
     ax.legend(loc='upper right', framealpha=0.9)
 
@@ -554,7 +483,10 @@ def fig_hqc():
 # ═══════════════════════════════════════════════════════════════
 if __name__ == '__main__':
     print('Generating paper figures (All Ref C removed)...')
-    os.makedirs(OUT_DESKTOP, exist_ok=True)
+    try:
+        os.makedirs(OUT_DESKTOP, exist_ok=True)
+    except OSError:
+        pass
     fig_amx_registers()
     fig_ntt_butterfly()
     fig_methodology()

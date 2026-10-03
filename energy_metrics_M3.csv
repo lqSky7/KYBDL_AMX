@@ -1,0 +1,12 @@
+scheme,parameter_set,operation,category,neon_lat_us,amx_lat_us,speedup,neon_pwr_w,amx_pwr_w,energy_neon_uj,energy_amx_uj,energy_reduction_pct,energy_ratio,perf_per_watt_neon_ops_per_J,perf_per_watt_amx_ops_per_J,perf_per_watt_gain,edp_neon_uj_us,edp_amx_uj_us,edp_reduction_ratio
+MAYO,MAYO-1,QuadFormEval (64x66),AMX Winner,129.67,87.94,1.4745,1.94,2.36,251.56,207.54,17.5,0.825,3975.2,4818.4,1.212,32619.76,18250.93,1.787
+MAYO,MAYO-2,QuadFormEval (64x78),AMX Winner,181.42,118.58,1.5299,1.95,2.38,353.77,282.22,20.22,0.7978,2826.7,3543.3,1.254,64180.77,33465.7,1.918
+MAYO,MAYO-3,QuadFormEval (96x99),AMX Winner,435.1,272.23,1.5983,1.97,2.4,857.15,653.35,23.78,0.7622,1166.7,1530.6,1.312,372944.66,177862.01,2.097
+MAYO,MAYO-5,QuadFormEval (128x133),AMX Winner,1054.8,624.14,1.69,1.98,2.42,2088.5,1510.42,27.68,0.7232,478.8,662.1,1.383,2202954.02,942712.79,2.337
+sntrup761,sntrup761,Ternary x Dense (KEM Hot Path),AMX Winner,55.8,36.7,1.5204,1.92,2.32,107.14,85.14,20.53,0.7947,9333.9,11744.8,1.258,5978.19,3124.78,1.913
+sntrup761,sntrup761,Dense x Dense,AMX Parity/Loss,78.1,84.6,0.9232,1.93,2.34,150.73,197.96,-31.33,1.3133,6634.2,5051.4,0.761,11772.25,16747.75,0.703
+ML-KEM,ML-KEM-512,PolyMul (MatrixVectorMul),AMX Severe Mismatch,1.33,99.8,0.0133,1.91,2.35,2.54,234.53,-9132.37,92.3237,393654.3,4263.8,0.011,3.38,23406.09,0.0
+ML-KEM,ML-KEM-768,PolyMul (MatrixVectorMul),AMX Severe Mismatch,2.97,224.9,0.0132,1.92,2.36,5.7,530.76,-9207.73,93.0773,175364.8,1884.1,0.011,16.94,119368.82,0.0
+ML-KEM,ML-KEM-1024,PolyMul (MatrixVectorMul),AMX Severe Mismatch,4.64,400.2,0.0116,1.93,2.38,8.96,952.48,-10536.01,106.3601,111667.0,1049.9,0.009,41.55,381180.9,0.0
+HQC,HQC-128,Sparse x Dense,AMX Severe Mismatch,11.0,1812.0,0.0061,1.91,2.3,21.01,4167.6,-19736.27,198.3627,47596.4,239.9,0.005,231.11,7551691.2,0.0
+HQC,HQC-128,Dense x Dense,AMX Severe Mismatch,47.0,73430.0,0.0006,1.92,2.3,90.24,168889.0,-187055.36,1871.5536,11081.6,5.9,0.001,4241.28,12401519270.0,0.0

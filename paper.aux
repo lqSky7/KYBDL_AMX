@@ -1,0 +1,177 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{gazzoni2024pqcamx}
+\citation{fips203}
+\citation{mayo2025spec}
+\citation{hqc2025spec}
+\citation{ntruprime2017spec}
+\citation{nist2022pqc}
+\citation{nejatollahi2019pqcsurvey}
+\citation{dougallj2022amx}
+\citation{gazzoni2024pqcamx}
+\citation{dangelo2018saber}
+\citation{bos2020frodokem}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{fips203}
+\citation{mayo2025spec}
+\citation{hqc2025spec}
+\citation{ntruprime2017spec}
+\citation{gazzoni2024pqcamx}
+\citation{dougallj2022amx}
+\citation{corsix2022amx}
+\citation{dangelo2018saber}
+\citation{toeplitz1911theorie}
+\citation{bos2020frodokem}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Summary of the Base Paper}{2}{section.2}\protected@file@percent }
+\newlabel{sec:basepaper}{{2}{2}{Summary of the Base Paper}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{2.1}}AMX Architecture}{2}{subsection.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Organization of the AMX register file (X, Y, Z) and the $32\times 32$ outer-product multiply-accumulate primitive. Each X/Y register holds 32 lanes of 16-bit integers (64 bytes), and the Z register stores the accumulated outer product.}}{2}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:amx-registers}{{1}{2}{Organization of the AMX register file (X, Y, Z) and the $32\times 32$ outer-product multiply-accumulate primitive. Each X/Y register holds 32 lanes of 16-bit integers (64 bytes), and the Z register stores the accumulated outer product}{figure.caption.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{2.2}}Saber: TMVP Reformulation of Polynomial Arithmetic}{2}{subsection.2.2}\protected@file@percent }
+\citation{gazzoni2024pqcamx}
+\citation{longa2016speeding}
+\citation{beullens2022mayo}
+\citation{hqc2025spec}
+\citation{ntruprime2017spec}
+\citation{gazzoni2024pqcamx}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{2.3}}FrodoKEM: Matrix Multiplication and GENLUT Sampling}{3}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {{2.4}}Reported Results}{3}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Research Gap and Motivation}{3}{section.3}\protected@file@percent }
+\newlabel{sec:gap}{{3}{3}{Research Gap and Motivation}{section.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Comparison of $O(n\log n)$ NTT butterfly multiplication (used by ML-KEM) versus the $O(n^2)$ schoolbook/TMVP matrix outer-product approach mapped onto AMX. The NTT stores keys in pre-transformed domain, amortizing the forward transform cost.}}{3}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:ntt-butterfly}{{2}{3}{Comparison of $O(n\log n)$ NTT butterfly multiplication (used by ML-KEM) versus the $O(n^2)$ schoolbook/TMVP matrix outer-product approach mapped onto AMX. The NTT stores keys in pre-transformed domain, amortizing the forward transform cost}{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Problem Statement}{3}{section.4}\protected@file@percent }
+\citation{fips203}
+\citation{longa2016speeding}
+\citation{becker2022neon}
+\citation{mayo2025spec,beullens2022mayo}
+\citation{kipnis1999uov}
+\citation{mayo2025spec}
+\citation{hqc2025spec}
+\citation{nist2025hqc}
+\citation{arm2021neon}
+\citation{ntruprime2017spec}
+\citation{dangelo2018saber}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Contributions}{4}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Background and Preliminaries}{4}{section.6}\protected@file@percent }
+\newlabel{sec:background}{{6}{4}{Background and Preliminaries}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{6.1}}ML-KEM (FIPS~203)}{4}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {{6.2}}MAYO Signature Scheme}{4}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {{6.3}}HQC (Hamming Quasi-Cyclic)}{4}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {{6.4}}Streamlined NTRU~Prime (\texttt  {sntrup761})}{4}{subsection.6.4}\protected@file@percent }
+\citation{becker2022neon}
+\citation{arm2021neon}
+\citation{gazzoni2024pqcamx}
+\citation{gazzoni2024pqcamx}
+\citation{longa2016speeding}
+\citation{beullens2022mayo}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Methodology}{5}{section.7}\protected@file@percent }
+\newlabel{sec:methodology}{{7}{5}{Methodology}{section.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Four-stage methodology pipeline: baseline acquisition, AMX reformulation, integration, and benchmarking with iterative feedback from Stage~4 to Stage~2.}}{5}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:methodology}{{3}{5}{Four-stage methodology pipeline: baseline acquisition, AMX reformulation, integration, and benchmarking with iterative feedback from Stage~4 to Stage~2}{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Implementation Details}{5}{section.8}\protected@file@percent }
+\newlabel{sec:implementation}{{8}{5}{Implementation Details}{section.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{8.1}}ML-KEM: TMVP vs.\ NTT}{5}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {{8.2}}MAYO: $\mathbb  {F}_{16}$ Quadratic Forms via GENLUT}{5}{subsection.8.2}\protected@file@percent }
+\citation{corsix2022amx}
+\citation{arm2021neon}
+\citation{gazzoni2024pqcamx}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{8.3}}HQC: $\mathbb  {F}_2$ via Integer Encoding}{6}{subsection.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {{8.4}}NTRU~Prime: Bounded Z-Accumulation for Prime Moduli}{6}{subsection.8.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}Results}{6}{section.9}\protected@file@percent }
+\newlabel{sec:results}{{9}{6}{Results}{section.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{9.1}}ML-KEM Results}{6}{subsection.9.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces ML-KEM cycle counts and kernel speedup $S = t_{\text  {NEON}}/t_{\text  {AMX}}$ on Apple M3 ($S < 1$ means AMX is slower). AMX uses TMVP polynomial multiplication; NEON uses NTT with pre-transformed keys.}}{6}{table.caption.4}\protected@file@percent }
+\newlabel{tab:mlkem}{{1}{6}{ML-KEM cycle counts and kernel speedup $S = t_{\text {NEON}}/t_{\text {AMX}}$ on Apple M3 ($S < 1$ means AMX is slower). AMX uses TMVP polynomial multiplication; NEON uses NTT with pre-transformed keys}{table.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{9.2}}MAYO Results}{6}{subsection.9.2}\protected@file@percent }
+\citation{arm2021neon}
+\citation{gazzoni2024pqcamx}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces ML-KEM: NEON NTT vs.\ AMX TMVP cycle counts on Apple M3 (log scale). Across all three parameter sets and all KEM operations, NEON NTT dominates by $31$--$86\times $.}}{7}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:mlkem-cycles}{{4}{7}{ML-KEM: NEON NTT vs.\ AMX TMVP cycle counts on Apple M3 (log scale). Across all three parameter sets and all KEM operations, NEON NTT dominates by $31$--$86\times $}{figure.caption.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces MAYO quadratic form evaluation kernel latency ($\mu $s) on Apple M3. Kernel speedup $S = t_{\text  {NEON}}/t_{\text  {AMX}}$ ($S > 1$ means AMX is faster).}}{7}{table.caption.6}\protected@file@percent }
+\newlabel{tab:mayo}{{2}{7}{MAYO quadratic form evaluation kernel latency ($\mu $s) on Apple M3. Kernel speedup $S = t_{\text {NEON}}/t_{\text {AMX}}$ ($S > 1$ means AMX is faster)}{table.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces MAYO: Kernel speedup $S = t_{\text  {NEON}}/t_{\text  {AMX}}$ across all four parameter sets on Apple M3. The dashed line indicates the $S = 1.0$ break-even point.}}{7}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:mayo-speedup}{{5}{7}{MAYO: Kernel speedup $S = t_{\text {NEON}}/t_{\text {AMX}}$ across all four parameter sets on Apple M3. The dashed line indicates the $S = 1.0$ break-even point}{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{9.3}}HQC Results}{7}{subsection.9.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces HQC-128 polynomial multiplication kernel latency ($\mu $s) on Apple M3 over $\mathbb  {F}_2[x]/(x^{17669}-1)$.}}{7}{table.caption.8}\protected@file@percent }
+\newlabel{tab:hqc}{{3}{7}{HQC-128 polynomial multiplication kernel latency ($\mu $s) on Apple M3 over $\mathbb {F}_2[x]/(x^{17669}-1)$}{table.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{9.4}}NTRU~Prime Results}{7}{subsection.9.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces \texttt  {sntrup761} polynomial multiplication kernel latency ($\mu $s) on Apple M3 over $\mathbb  {Z}_{4591}[x]/(x^{761}-x-1)$. Ternary input has coefficients in $\{-1,0,1\}$.}}{7}{table.caption.9}\protected@file@percent }
+\newlabel{tab:sntrup}{{4}{7}{\texttt {sntrup761} polynomial multiplication kernel latency ($\mu $s) on Apple M3 over $\mathbb {Z}_{4591}[x]/(x^{761}-x-1)$. Ternary input has coefficients in $\{-1,0,1\}$}{table.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{9.5}}Cross-Scheme Summary}{7}{subsection.9.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {10}Analysis and Discussion}{7}{section.10}\protected@file@percent }
+\newlabel{sec:analysis}{{10}{7}{Analysis and Discussion}{section.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{10.1}}The AMX Suitability Heuristic}{7}{subsection.10.1}\protected@file@percent }
+\citation{becker2022neon}
+\citation{arm2021neon}
+\citation{fips203}
+\citation{becker2022neon}
+\citation{beullens2022mayo}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Cross-scheme AMX feasibility: kernel speedup $S = t_{\text  {NEON}}/t_{\text  {AMX}}$ on Apple M3 (log scale). Kernels with $S > 1$ benefit from AMX acceleration; those with $S < 1$ are faster on NEON. The measured $S$ values span over three orders of magnitude, from $1.69$ (MAYO-5) to $0.00064$ (HQC dense).}}{8}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:crossscheme}{{6}{8}{Cross-scheme AMX feasibility: kernel speedup $S = t_{\text {NEON}}/t_{\text {AMX}}$ on Apple M3 (log scale). Kernels with $S > 1$ benefit from AMX acceleration; those with $S < 1$ are faster on NEON. The measured $S$ values span over three orders of magnitude, from $1.69$ (MAYO-5) to $0.00064$ (HQC dense)}{figure.caption.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces AMX suitability heuristic applied to six post-quantum schemes. AMX kernel speedup ($S > 1$) is observed only when all three conditions are satisfied: dense MAC workload, small modulus, and no competing NEON instruction.}}{8}{table.caption.11}\protected@file@percent }
+\newlabel{tab:criterion}{{5}{8}{AMX suitability heuristic applied to six post-quantum schemes. AMX kernel speedup ($S > 1$) is observed only when all three conditions are satisfied: dense MAC workload, small modulus, and no competing NEON instruction}{table.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{10.2}}Why ML-KEM Loses: NTT Domain Amortization}{8}{subsection.10.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {{10.3}}Why HQC Loses: Fundamental Instruction Mismatch}{8}{subsection.10.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {{10.4}}Why MAYO and NTRU~Prime Win}{8}{subsection.10.4}\protected@file@percent }
+\citation{ntruprime2017spec}
+\citation{corsix2022amx}
+\citation{nist2026additional}
+\citation{dougallj2022amx}
+\citation{corsix2022amx}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces MAYO: Kernel speedup $S$ scales with matrix dimension product $m \times n$. Larger parameter sets achieve higher $S$, which we hypothesize is due to better amortization of AMX setup overhead.}}{9}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:mayo-trend}{{7}{9}{MAYO: Kernel speedup $S$ scales with matrix dimension product $m \times n$. Larger parameter sets achieve higher $S$, which we hypothesize is due to better amortization of AMX setup overhead}{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{10.5}}AMX Overhead Analysis}{9}{subsection.10.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {11}Broader Survey: AMX Candidates in the PQC Landscape}{9}{section.11}\protected@file@percent }
+\newlabel{sec:survey}{{11}{9}{Broader Survey: AMX Candidates in the PQC Landscape}{section.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces AMX suitability survey of PQC candidates beyond the four studied schemes. Ratings: \textbf  {High} = structurally similar to Saber/MAYO; \textbf  {Moderate} = partial match; \textbf  {None} = fundamental mismatch.}}{9}{table.caption.13}\protected@file@percent }
+\newlabel{tab:survey}{{6}{9}{AMX suitability survey of PQC candidates beyond the four studied schemes. Ratings: \textbf {High} = structurally similar to Saber/MAYO; \textbf {Moderate} = partial match; \textbf {None} = fundamental mismatch}{table.caption.13}{}}
+\citation{botros2019pqm4,becker2022neon}
+\citation{longa2016speeding}
+\citation{mayo2025spec}
+\citation{beullens2022mayo}
+\citation{hqc2025spec}
+\citation{arm2021neon}
+\citation{chung2021ntt}
+\citation{harvey2014karatsuba}
+\citation{nejatollahi2019pqcsurvey}
+\citation{dougallj2022amx,corsix2022amx}
+\citation{harvey2014karatsuba}
+\citation{mayo2025spec}
+\citation{gazzoni2024pqcamx}
+\@writefile{toc}{\contentsline {section}{\numberline {12}Related Work}{10}{section.12}\protected@file@percent }
+\newlabel{sec:related}{{12}{10}{Related Work}{section.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {13}Limitations and Threats to Validity}{10}{section.13}\protected@file@percent }
+\newlabel{sec:limitations}{{13}{10}{Limitations and Threats to Validity}{section.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {14}Conclusion}{10}{section.14}\protected@file@percent }
+\newlabel{sec:conclusion}{{14}{10}{Conclusion}{section.14}{}}
+\citation{nist2026additional}
+\bibcite{gazzoni2024pqcamx}{{1}{}{{}}{{}}}
+\bibcite{dougallj2022amx}{{2}{}{{}}{{}}}
+\bibcite{corsix2022amx}{{3}{}{{}}{{}}}
+\bibcite{mayo2025spec}{{4}{}{{}}{{}}}
+\bibcite{beullens2022mayo}{{5}{}{{}}{{}}}
+\bibcite{hqc2025spec}{{6}{}{{}}{{}}}
+\citation{nist2025hqc}
+\bibcite{ntruprime2017spec}{{7}{}{{}}{{}}}
+\bibcite{fips203}{{8}{}{{}}{{}}}
+\bibcite{botros2019pqm4}{{9}{}{{}}{{}}}
+\bibcite{becker2022neon}{{10}{}{{}}{{}}}
+\bibcite{nist2022pqc}{{11}{}{{}}{{}}}
+\bibcite{nist2026additional}{{12}{}{{}}{{}}}
+\bibcite{nist2025hqc}{{13}{}{{}}{{}}}
+\bibcite{nejatollahi2019pqcsurvey}{{14}{}{{}}{{}}}
+\bibcite{longa2016speeding}{{15}{}{{}}{{}}}
+\bibcite{kipnis1999uov}{{16}{}{{}}{{}}}
+\bibcite{arm2021neon}{{17}{}{{}}{{}}}
+\bibcite{dangelo2018saber}{{18}{}{{}}{{}}}
+\bibcite{bos2020frodokem}{{19}{}{{}}{{}}}
+\bibcite{chung2021ntt}{{20}{}{{}}{{}}}
+\bibcite{harvey2014karatsuba}{{21}{}{{}}{{}}}
+\bibcite{toeplitz1911theorie}{{22}{}{{}}{{}}}
+\global\@namedef{@lastpage@}{12}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\gdef \@abspage@last{13}
